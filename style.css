@@ -45,6 +45,10 @@ h5 {
   margin-top: 1.5em;
 }
 
+.footer-link .footer-more-info .nav-item:hover a{
+  color: whitesmoke !important;
+}
+
 .contact-banner {
   display: flex;
   text-align: center;
