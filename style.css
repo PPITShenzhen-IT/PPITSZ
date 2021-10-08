@@ -88,11 +88,11 @@ h5 {
   display: inline-block;
   background: #000000;
   line-height: 1;
-  padding: 8px 0;
+  padding: 10px 0;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   transition: 0.3s;
   text-decoration: none;
 }
