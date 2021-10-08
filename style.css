@@ -90,6 +90,7 @@ h5 {
   line-height: 1;
   padding: 10px 0;
   border-radius: 50%;
+  margin: 0 10px;
   text-align: center;
   width: 40px;
   height: 40px;
@@ -140,4 +141,8 @@ i {
 
 .icon-circle {
   margin: 0 10px;
+}
+
+.more-info li a:hover {
+  color: white;
 }
