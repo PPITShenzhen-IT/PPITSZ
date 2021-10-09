@@ -4,22 +4,20 @@
   color: white;
 }
 
-.container-fluid {
-  max-width: 100vw;
-  width: 100vw;
+footer {
   background-color: #323232;
   margin: 0px;
 }
 
-.row {
+footer .row {
   margin: 0px;
 }
 
-ul {
+footer ul {
   color: #c2c2c2;
 }
 
-h5 {
+footer h5 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 200;
@@ -34,22 +32,22 @@ h5 {
 
 .bottom-footer {
   background-color: #000000;
-  height: 60px;
   margin: 0px;
   padding: 0px;
 }
 
 .bottom-footer p {
-  font-size: small;
+  font-size: 0.8em;
   color: #9e9e9e;
   margin-top: 1.5em;
+  line-height: 2em;
 }
 
 .footer-link .footer-more-info .nav-item:hover a{
   color: whitesmoke !important;
 }
 
-.contact-banner {
+footer .contact-banner {
   display: flex;
   text-align: center;
   border: 2px solid #c2c2c2;
@@ -58,71 +56,75 @@ h5 {
   padding: 0.6em;
 }
 
-.contact-banner h2 {
+footer .contact-banner h2 {
   font-size: 14px;
   margin-bottom: -0.2em;
 }
 
-.contact-banner i {
+footer .contact-banner i {
   margin-right: 0.3em;
 }
 
-.li-whatsapp:hover,
-.li-whatsapp:hover h2,
-.li-whatsapp:hover i {
+footer .li-whatsapp:hover,
+footer .li-whatsapp:hover h2,
+footer .li-whatsapp:hover i {
   background-color: #25d366;
   border-color: #25d366;
   color: white;
 }
 
-.li-email:hover h2,
-.li-email:hover,
-.li-email:hover i {
+footer .li-email:hover h2,
+footer .li-email:hover,
+footer .li-email:hover i {
   background-color: #ed254e;
   border-color: #ed254e;
   color: white;
 }
 
-.contact-us-ul a {
+footer .contact-us-ul a {
   text-decoration: none;
 }
 
-.social-links a {
-  font-size: 20px;
+footer .social-links a {
+  font-size: 24px;
   display: inline-block;
   background: #000000;
   line-height: 1;
-  padding: 10px 0;
+  padding: 13px 0;
   border-radius: 50%;
-  margin: 0 5px;
+  margin: 0px 5px 8px 0px;
   text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   transition: 0.3s;
   text-decoration: none;
 }
 
-.social-links .icon-lin:hover {
+footer .social-links a:last-of-type {
+  margin: 0px;
+}
+
+footer .social-links .icon-lin:hover {
   background-color: #0077b5;
   text-decoration: none;
 }
 
-.social-links .icon-fb:hover {
+footer .social-links .icon-fb:hover {
   background-color: #177bf2;
   text-decoration: none;
 }
 
-.social-links .icon-yt:hover {
+footer .social-links .icon-yt:hover {
   background-color: #e62117;
   text-decoration: none;
 }
 
-.social-links .icon-dc:hover {
+footer .social-links .icon-dc:hover {
   background-color: #7289da;
   text-decoration: none;
 }
 
-.social-links .icon-ig:hover {
+footer .social-links .icon-ig:hover {
   background: #f09433;
   background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
@@ -131,22 +133,36 @@ h5 {
   text-decoration: none;
 }
 
-.social-links a:hover i {
+footer .social-links a:hover i {
   color: white;
 }
 
-i {
+footer i {
   color: #a9a9a9;
 }
 
-.discord {
+footer .discord {
   filter: invert(73%) sepia(1%) saturate(0%) hue-rotate(209deg) brightness(93%) contrast(89%);
 }
 
-.icon-circle {
+footer .icon-circle {
   margin: 0 10px;
 }
 
-.more-info li a:hover {
+footer .more-info li a:hover {
   color: white;
+}
+
+footer #tuantuan img {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  footer #tuantuan {
+    margin: auto 0px;
+  }
+
+  footer #tuantuan img{
+    width: 80%;
+  }
 }
