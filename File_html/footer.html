@@ -79,13 +79,13 @@
             <a href="" target="_blank" class="whatsapp">
               <li class="nav-item mb-2 contact-banner li-whatsapp">
                 <i class="icofont-whatsapp"></i>
-                <h2>WhatsApp</h2>
+                <h2 id="setContactWA"></h2>
               </li>
             </a>
             <a href="" target="_blank" class="email">
               <li class="nav-item mb-2 contact-banner li-email">
                 <i class="icofont-envelope"></i>
-                <h2>Email</h2>
+                <h2 id="setContactEmail"></h2>
               </li>
             </a>
           </ul>
@@ -106,6 +106,13 @@
       }
       setCopyright();
       window.onresize = setCopyright;
+
+      function setContact() {
+        (window.innerWidth >= 1280) ? document.querySelector("#setContactWA").innerHTML = `+62 888 8888 8888` : document.querySelector("#setContactWA").innerHTML = `WhatsApp`;
+        (window.innerWidth >= 1280) ? document.querySelector("#setContactEmail").innerHTML = `info@ppitshenzhen.com` : document.querySelector("#setContactEmail").innerHTML = `Email`;
+      }
+      setContact();
+      window.onresize = setContact;
     </script>
 
   </footer>
