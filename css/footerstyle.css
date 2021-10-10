@@ -157,8 +157,10 @@ footer #tuantuan img {
   width: 80%;
 }
 
-#footer-informationSection {
-  margin-right: 1em;
+@media (max-width: 1279px) {
+  #footer-informationSection {
+    margin-right: 1em;
+  }
 }
 
 @media (max-width: 767px) {
