@@ -7,25 +7,31 @@
 
     <link rel="stylesheet" href="../Vendor/bootstrap/bootstrap-5.1.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/navbarstyle.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+    rel="stylesheet" />
+
     <title>Document</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <div class="container-xxl">
+
+        <h5>PPIT Shenzhen</h5>
+
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   About
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <ul class="dropdown-menu" id="dd-about" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="#">PPIT Shenzhen</a></li>
                   <li><a class="dropdown-item" href="#">Visi Misi</a></li>
                   <li><a class="dropdown-item" href="#">Committee</a></li>
@@ -37,7 +43,7 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Information
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <ul class="dropdown-menu" id="dd-info" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="#">About Shenzhen</a></li>
                   <li><a class="dropdown-item" href="#">Shenzhen Universities</a></li>
                   <li><a class="dropdown-item" href="#">Interaktif Mapbox</a></li>
@@ -53,7 +59,10 @@
               </li>
             </ul>
           </div>
+          <img src="../Assets/img/logo/PPIT_Shenzhen_Logo.png" alt="PPIT Shenzhen" class="logo-ppit align-end d-none d-lg-block"/>
+
         </div>
+        
       </nav>
 
     <script src="../Vendor/bootstrap/bootstrap-5.1.2-dist/js/bootstrap.bundle.min.js"></script>

@@ -1,3 +1,66 @@
-.navbar-nav li {
-    padding: 0 10px;
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 17px
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@keyframes dd-slide-about {
+    from {max-height: 0px;}
+    to {max-height: 160px;}
+}
+
+@keyframes dd-slide-info {
+    from {max-height: 0px;}
+    to {max-height: 250px;}
+}
+
+#dd-about.show {
+    border-radius: 1em;
+    background-color:#061826;
+    animation: dd-slide-about 0.5s ease;
+}
+
+#dd-info.show {
+    border-radius: 1em;
+    background-color:#061826;
+    animation: dd-slide-info 0.5s ease;
+}
+
+.navbar .nav-item{
+    margin: 5px 7px ;
+    padding: 15px 15px;
+}
+
+.dropdown-item {
+    color: white;
+    font-size: 15px;
+    padding: 10px 70px;
+    padding-left: 20px;
+    /* margin: 10px; JANGAN DI UNCOMMENT*/
+}
+
+
+.dropdown-menu li:hover {
+    display: block;
+    font-weight: 300;
+    transition-property: background-color,border-color,color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .5s;
+}
+
+.dropdown-menu {
+    border: 0px;
+    padding: 20px 0px;
+}
+
+
+.logo-ppit {  
+    top: 10px;
+    right: 20px;
+    position: absolute;
+    width: 60px;
 }
