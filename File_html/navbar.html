@@ -9,69 +9,74 @@
     <link rel="stylesheet" href="../css/navbarstyle.css">
 
     <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
-    rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,800&display=swap" rel="stylesheet">
 
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-xxl">
+    
+  <div class="navbar navbar-expand-lg navbar-light">
+    
+    <div class="container-xxl justify-content-start" id="mainNavbarContainer">
+      <!-- <a class="navbar-brand">PPIT Shenzhen</a> -->
 
-          <a class="navbar-brand">PPIT Shenzhen</a>
+      <!-- Hamburger Section -->
+      <img src="../Assets/img/logo/PPIT_Shenzhen_Logo.png" alt="PPIT Shenzhen" class="logo-ppit d-none d-lg-block"/>
 
-          <div class="menu-btn .d-none .d-sm-block .d-md-block d-lg-none">
-            <div class="menu-btn-burger"></div>
-          </div>
+      <div class="menu-btn dd-sm-block d-md-block d-lg-none">
+        <div class="menu-btn-burger"></div>
+      </div>
 
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  About
-                </a>
-                <ul class="dropdown-menu" id="dd-about" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">PPIT Shenzhen</a></li>
-                  <li><a class="dropdown-item" href="#">Visi Misi</a></li>
-                  <li><a class="dropdown-item" href="#">Committee</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Activity</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Information
-                </a>
-                <ul class="dropdown-menu" id="dd-info" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">About Shenzhen</a></li>
-                  <li><a class="dropdown-item" href="#">Shenzhen Universities</a></li>
-                  <li><a class="dropdown-item" href="#">Interaktif Mapbox</a></li>
-                  <li><a class="dropdown-item" href="#">Blogs</a></li>
-                  <li><a class="dropdown-item" href="#">FAQs</a></li>
-                  <li><a class="dropdown-item" href="#">Latest News</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Career</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <img src="../Assets/img/logo/PPIT_Shenzhen_Logo.png" alt="PPIT Shenzhen" class="logo-ppit align-end d-none d-lg-block"/>
+      <div class="mobile-nav-links">
 
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"><span >Home</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span >About</span>
+              </a>
+              <ul class="dropdown-menu" id="dd-about" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">PPIT Shenzhen</a></li>
+                <li><a class="dropdown-item" href="#">Visi Misi</a></li>
+                <li><a class="dropdown-item" href="#">Committee</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span >Activity</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span >Information</span>
+              </a>
+              <ul class="dropdown-menu" id="dd-info" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">About Shenzhen</a></li>
+                <li><a class="dropdown-item" href="#">Shenzhen Universities</a></li>
+                <li><a class="dropdown-item" href="#">Interaktif Mapbox</a></li>
+                <li><a class="dropdown-item" href="#">Blogs</a></li>
+                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                <li><a class="dropdown-item" href="#">Latest News</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span >Career</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span >Contact</span></a>
+            </li>
+          </ul>
         </div>
-        
-      </nav>
+      </div>
+      
 
-    <script src="../Vendor/bootstrap/bootstrap-5.1.2-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../main.js"></script>
+    </div>
+  </nav>
+
+  <script src="../Vendor/bootstrap/bootstrap-5.1.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../main.js"></script>
 </body>
 </html>

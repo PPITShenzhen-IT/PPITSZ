@@ -1,5 +1,5 @@
-*{
-    font-family: "Poppins", sans-serif;
+* {
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 17px;
     box-sizing: border-box;
@@ -21,13 +21,30 @@ html{
 
 #dd-about.show {
     border-radius: 1em;
-    background-color:#061826;
+    background-color: #FFF3D9;
     animation: dd-slide-about 0.5s ease;
 }
 
 #dd-info.show {
     border-radius: 1em;
-    background-color:#061826;
+    background-color:#FFF3D9;
+    animation: dd-slide-info 0.5s ease;
+}
+
+.collapse:not(.show) {
+    display: inherit;
+}
+
+.dropdown-item {
+    /* color: white; */
+    color: #000;
+    font-size: 15px;
+    padding: 10px 70px;
+    padding-left: 20px;
+}
+#dd-info.show {
+    border-radius: 1em;
+    background-color: bla;
     animation: dd-slide-info 0.5s ease;
 }
 
@@ -44,15 +61,10 @@ html{
     padding: 7px 15px;
 }
 
-.dropdown-item {
-    color: white;
-    font-size: 15px;
-    padding: 10px 70px;
-    padding-left: 20px;
-}
 
 .dropdown-menu li:hover {
     display: block;
+    color: #EC2429;
     font-weight: 300;
     transition-property: background-color,border-color,color,fill,stroke;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
@@ -64,20 +76,52 @@ html{
     padding: 20px 0px;
 }
 
-
 .logo-ppit {  
-    top: 10px;
-    right: 20px;
-    position: absolute;
-    width: 60px;
+    width: 100px;
 }
+
+.mobile-nav-links {
+    position: inherit;
+    z-index: 0;
+    margin-bottom: auto;
+}
+
+#mainNavbarContainer {
+    padding: 0px 5em;
+}
+  
+@media screen and (max-width: 768px) {
+    .mobile-nav-links {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      background: #EC2429;
+      height: 100vh;
+      width: 100vw;
+      flex-direction: column;
+      clip-path: circle(90px at 100% -10%);
+      -webkit-clip-path: circle(0px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+    }
+    .mobile-nav-links.open {
+      clip-path: circle(1200px at 90% -10%);
+      -webkit-clip-path: circle(1200px at 90% -10%);
+      pointer-events: all;
+    }
+
+    li.fade {
+      opacity: 1;
+    }
+  }
 
 .menu-btn{
     position:fixed;
     top: 40px;
-    right: 60px;
+    right: 45px;
     cursor: pointer;
     transition: all .5s ease-in-out;
+    z-index: 100;
 }
 
 .menu-btn-burger{
@@ -121,4 +165,21 @@ html{
     transform: rotate(-45deg) translate(35px, 35px);
 }
 
+.nav-link span {
+    font-weight: 600;
+    color: black;
+    position: relative;
+} 
+
+.nav-link span:after {
+    background-color: #FFF3D9;
+    content: "";
+    height: 45%;
+    position: absolute;
+    left: 0;
+    margin-left: -0.65rem;
+    top: 50%;
+    width: calc(100% + 1.5rem);
+    z-index: -1; 
+}
 
