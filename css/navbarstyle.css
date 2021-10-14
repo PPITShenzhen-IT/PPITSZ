@@ -208,7 +208,7 @@ html{
     position: absolute;
     left: 0;
     margin-left: -0.35rem;
-    top: 50%;
+    top: 60%;
     width: calc(100% + 0.7rem);
     z-index: -1; 
 
