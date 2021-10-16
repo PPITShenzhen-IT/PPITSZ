@@ -36,6 +36,7 @@ div.container-xxl {
 
 #hero .hero-section h1 span {
     position: relative;
+    z-index: -2;
 }
   
 #hero .hero-section h1 span:after {
@@ -52,6 +53,8 @@ div.container-xxl {
 }
 
 #hero .hero-section .btn{
+    background-color: #EC2429;
+    color: white;
     border-radius: 15px;
     padding: 10px 30px;
     margin-top: 10px;
@@ -62,7 +65,6 @@ div.container-xxl {
 @media screen {
     
 }
-
 
 /* =========== Profile =========== */
 
@@ -82,20 +84,62 @@ div.container-xxl {
 
 /* Activities */
 
+#activities{
+    margin-top: 7em;
+    position: relative;
+}
+
+#redribbon {
+    position: absolute;
+    background-color: red;
+    height: 70%;
+    width: calc(100vw - 17px);
+    z-index: -10;
+    margin-top: 5%;
+    left: -17px;
+}
+
+#activitiesTitle {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+#activitiesHeadline {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#activitiesText {
+    max-width: 70%;
+}
+
+#activitiesInfoCol {
+    background-color: white;
+    padding: 3em 4em;
+}
+
 #activitiesPhone {
-    width: 80%;
-    margin: auto;
+    background-color: white;
     box-shadow: 0px 4px 20px 10px rgba(0,0,0,0.15);
-    border-radius: 1em;
-    padding-top: 2em;
-    padding-bottom: 3em;
+    border-radius: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 #activitiesPhoneDisplay {
-    background-color: red;
+    background-color: #fff3d9;
     margin: auto;
-    margin-bottom: 1em;
-    height: 300px;
-    width: 80%;
-    border-radius: 1em;
+    margin-bottom: 1.6em;
+    height: 475px;
+    width: 95%;
+    border-radius: 1em 1em 0em 0em;
+}
+
+.fas {
+    font-size: 50px;
+    margin: 0 40px;
+}
+
+#footerIframe {
+    display: block;
 }

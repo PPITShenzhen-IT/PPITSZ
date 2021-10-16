@@ -41,23 +41,27 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="../Assets/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    
     <!-- ========== VENDOR CSS ========== -->
-
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
-          rel="stylesheet" 
-          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
-          crossorigin="anonymous"
+    rel="stylesheet" 
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+    crossorigin="anonymous"
     />
     <link href="../Vendor/aos/aos.css" rel="stylesheet">
-
+    
     <!-- ========= Main CSS ========== -->
     <link href="../css/index.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
+    <!-- ========= Icon ========= -->
+    <script src="https://kit.fontawesome.com/0be266d117.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    
     <title>Home | PPIT Shenzhen</title>
-</head>
-<body>
+  </head>
+  <body>
 
   <!-- Navbar (JQUERY) -->
   <!-- <iframe src="navbar.html" style="width: 100vw; position: absolute; top: 0px; background: transparent; z-index: 0;" frameborder="0" scrolling="no" onload="adjust()"></iframe>
@@ -80,12 +84,10 @@
         <h5>to the Official Website of Perhimpunan <br> 
           Pelajar Indonesia di Tiongkok, Shenzhen <br>
           在华印尼学生协会  -  深圳市</h5>
-        <a href="#" class="btn btn-danger mr-4">Learn More About Us</a>
+        <a href="#" class="btn mr-4">Learn More About Us</a>
       </div>
     </section>
-  </div>
 
-  <div class="container-xxl">
     <section id="profile">
         <div class="profile-section justify-content-center text-center">
             <h3>Profile Singkat PPIT Shenzhen</h3>
@@ -93,44 +95,63 @@
         </div>
     </section>
   </div>
-
+  <div class="container-fluid">
+    <section id="activities">
+      <div id="redribbon"></div>
+      <div class="container-xxl">
+        <div class="row justify-content-center">
+          <div class="col col-7" id="activitiesInfoCol">
+            <div class="row" id="activitiesTitle">
+              Check Our Latest Events
+            </div>
+            <div class="row mt-5 mb-2" id="activitiesHeadline">
+              #FeedTheStray
+            </div>
+            <div class="row" id="activitiesText">
+              Volunteers bersukarela memberikan makanan untuk stray animals yang kalian temukan di jalan, sebanyak yang kalian mau.
+              <br><br>
+              Challenge ini akan berlangsung selama 1 minggu (mulai tanggal 15 - 22 Oktober), dimana volunteers bebas memilih 2 hari (tidak harus berturut) untuk melakukan aksi kalian.
+            </div>
+          </div>
+          <div class="col col-1"></div>
+          <div class="col col-3 text-center" id="activitiesPhone">
+            <div id="activitiesPhoneDisplay">
+              
+            </div>
+            <i class="fas fa-caret-left" onclick=""></i>
+            <i class="fas fa-caret-right" onclick=""></i>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
   <div class="container-xxl">
-    <div class="row">
-      <div class="col col-7">
-        <div class="row">
-          Activities
-        </div>
-        <div class="row">
-          Feed The Strays Text
-        </div>
-      </div>
-      <div class="col col-3 text-center" id="activitiesPhone">
-        <div id="activitiesPhoneDisplay">
-
-        </div>
-        <p>left   right</p>
-      </div>
-    </div>
+  
   </div>
 
 
   <!-- Footer (iframe + VanillaJS) -->
-  <iframe src="footer.html" style="width: 100vw;" frameborder="0" scrolling="no" onload="adjust()"></iframe>
+  <iframe class="footerIframe" src="footer.html" frameborder="0" scrolling="no" onload="adjust()"></iframe>
   <script>
-    const footer = document.querySelector("iframe[src='footer.html']");
-    const navbarOffset = document.querySelector("#navbarOffset");
-    const mainContent = document.querySelector("#maincontent");
-    const navbar = document.querySelector("iframe[src='navbar.html']");
+    let footer = document.querySelector("iframe[src='footer.html']");
+    // const navbarOffset = document.querySelector("#navbarOffset");
+    // const mainContent = document.querySelector("#maincontent");
+    // const navbar = document.querySelector("iframe[src='navbar.html']");
     function adjust() {
-      footer.style.height = footer.contentWindow.document.documentElement.scrollHeight + 'px';
-      
-      navbar.style.height = "inherit";
-      let navbarheight = navbar.getBoundingClientRect().height;
-      console.log(navbarheight);
-      navbarOffset.style.height = navbarheight + "px";
-      navbar.style.height = "100vh";
+      footer.style.width = "inherit";
+      footer.style.height = "inherit";
+      console.log(footer.contentWindow.document.body.scrollHeight + 'px');
+      footer.style.height = footer.contentWindow.document.body.scrollHeight + 'px';
+      footer.style.width = "calc(100vw - 17px)";
+      // navbar.style.height = "inherit";
+      // let navbarheight = navbar.getBoundingClientRect().height;
+      // navbarOffset.style.height = navbarheight + "px";
+      // navbar.style.height = "100vh";
+      // footer.style.width = "calc(" + window.innerWidth + "px - 18px)";
     }
     window.onresize = adjust;
+
   </script>
   
   

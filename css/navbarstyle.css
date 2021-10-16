@@ -114,6 +114,7 @@ html {
     pointer-events: none;
     --ms-overflow-style: none;
     scrollbar-width: none;
+    z-index: 9997;
   }
 
   .mobile-nav-links::-webkit-scrollbar {
@@ -158,7 +159,7 @@ html {
   right: 45px;
   cursor: pointer;
   transition: all 0.5s ease-in-in;
-  z-index: 100;
+  z-index: 9999;
 }
 
 .menu-btn-burger {
