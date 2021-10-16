@@ -64,17 +64,17 @@
   <body>
 
   <!-- Navbar (JQUERY) -->
-  <!-- <iframe src="navbar.html" style="width: 100vw; position: absolute; top: 0px; background: transparent; z-index: 0;" frameborder="0" scrolling="no" onload="adjust()"></iframe>
-  <div id="navbarOffset" style="z-index: -10;"></div> -->
+  <iframe src="navbar.html" style="width: 100vw; position: absolute; top: 0px; background: transparent; z-index: 0;" frameborder="0" scrolling="no" onload="adjust()"></iframe>
+  <div id="navbarOffset" style="z-index: -10;"></div>
 
-    <nav id="nav-placeholder">
+    <!-- <nav id="nav-placeholder">
 
     </nav>
     <script>
       $(function() {
         $("#nav-placeholder").load("navbar.html");
       })
-    </script>
+    </script> -->
 
   <!-- Main Content -->
   <div class="container-xxl" id="maincontent">
@@ -140,6 +140,9 @@
     // const navbar = document.querySelector("iframe[src='navbar.html']");
     function adjust() {
       console.log(footer.contentWindow.document.body.scrollHeight + 'px');
+      footer.style.position = "relative";
+      footer.style.bottom = 0;
+      // footer.style.left = 0;
       footer.style.height = footer.contentWindow.document.body.scrollHeight + 'px';
       footer.style.width = "calc(100vw - 17px)";
       // navbar.style.height = "inherit";
