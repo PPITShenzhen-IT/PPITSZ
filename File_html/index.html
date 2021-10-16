@@ -134,13 +134,11 @@
   <!-- Footer (iframe + VanillaJS) -->
   <iframe class="footerIframe" src="footer.html" frameborder="0" scrolling="no" onload="adjust()"></iframe>
   <script>
-    let footer = document.querySelector("iframe[src='footer.html']");
+    let footer = document.querySelector(".footerIframe");
     // const navbarOffset = document.querySelector("#navbarOffset");
     // const mainContent = document.querySelector("#maincontent");
     // const navbar = document.querySelector("iframe[src='navbar.html']");
     function adjust() {
-      footer.style.width = "inherit";
-      footer.style.height = "inherit";
       console.log(footer.contentWindow.document.body.scrollHeight + 'px');
       footer.style.height = footer.contentWindow.document.body.scrollHeight + 'px';
       footer.style.width = "calc(100vw - 17px)";
