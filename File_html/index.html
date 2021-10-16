@@ -49,31 +49,102 @@
           integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
           crossorigin="anonymous"
     />
-    <link href="vendor/aos/aos.css" rel="stylesheet">
+    <link href="../Vendor/aos/aos.css" rel="stylesheet">
 
     <!-- ========= Main CSS ========== -->
-    <link href="style.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <title>Home | PPIT Shenzhen</title>
 </head>
 <body>
-    <nav>
+
+  <!-- Navbar (JQUERY) -->
+  <!-- <iframe src="navbar.html" style="width: 100vw; position: absolute; top: 0px; background: transparent; z-index: 0;" frameborder="0" scrolling="no" onload="adjust()"></iframe>
+  <div id="navbarOffset" style="z-index: -10;"></div> -->
+
+    <nav id="nav-placeholder">
 
     </nav>
-    <section>
-        <h1>Welcome</h1>
-    </section>
-    
-    
-    <!-- =========== VENDOR CSS ========== -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" 
-            crossorigin="anonymous">
+    <script>
+      $(function() {
+        $("#nav-placeholder").load("navbar.html");
+      })
     </script>
-    <script src="vendor/aos/aos.js"></script>
 
-    <!-- =========== Template Main JS File =========== -->
-    <script src="main.js"></script>
+  <!-- Main Content -->
+  <div class="container-xxl" id="maincontent">
+    <section id="hero" >
+      <div class="hero-section">
+        <h1 class="highlight"><span>Welcome</span></h1>
+        <h5>to the Official Website of Perhimpunan <br> 
+          Pelajar Indonesia di Tiongkok, Shenzhen <br>
+          在华印尼学生协会  -  深圳市</h5>
+        <a href="#" class="btn btn-danger mr-4">Learn More About Us</a>
+      </div>
+    </section>
+  </div>
+
+  <div class="container-xxl">
+    <section id="profile">
+        <div class="profile-section justify-content-center text-center">
+            <h3>Profile Singkat PPIT Shenzhen</h3>
+            <p>Keinginan pelajar-pelajar Indonesia di Kota Shenzhen untuk berdiri mandiri sebagai sebuah organisasi bermula pada tahun 2018. Di tahun yang sama, Perhimpunan Pelajar Indonesia di Tiongkok ranting Shenzhen (PPITSZ) resmi berdiri dengan Saudara Ivan Prawira Limanauw, salah satu inisiator PPITSZ, sebagai ketua umumnya. Setelah melewati satu periode kepengurusan, PPITSZ akhirnya disahkan sebagai cabang pada tahun 2019.</p>
+        </div>
+    </section>
+  </div>
+
+  <div class="container-xxl">
+    <div class="row">
+      <div class="col col-7">
+        <div class="row">
+          Activities
+        </div>
+        <div class="row">
+          Feed The Strays Text
+        </div>
+      </div>
+      <div class="col col-3 text-center" id="activitiesPhone">
+        <div id="activitiesPhoneDisplay">
+
+        </div>
+        <p>left   right</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer (iframe + VanillaJS) -->
+  <iframe src="footer.html" style="width: 100vw;" frameborder="0" scrolling="no" onload="adjust()"></iframe>
+  <script>
+    const footer = document.querySelector("iframe[src='footer.html']");
+    const navbarOffset = document.querySelector("#navbarOffset");
+    const mainContent = document.querySelector("#maincontent");
+    const navbar = document.querySelector("iframe[src='navbar.html']");
+    function adjust() {
+      footer.style.height = footer.contentWindow.document.documentElement.scrollHeight + 'px';
+      
+      navbar.style.height = "inherit";
+      let navbarheight = navbar.getBoundingClientRect().height;
+      console.log(navbarheight);
+      navbarOffset.style.height = navbarheight + "px";
+      navbar.style.height = "100vh";
+    }
+    window.onresize = adjust;
+  </script>
+  
+  
+  <!-- =========== VENDOR CSS ========== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" 
+          crossorigin="anonymous">
+  </script>
+  <script src="../Vendor/typed.js/typed.min.js"></script>
+  <script src="../Vendor/aos/aos.js"></script>
+
+  <!-- =========== Template Main JS File =========== -->
+  <script src="../javascript/index.js"></script>
 
 </body>
+
 </html>

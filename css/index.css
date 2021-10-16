@@ -1,0 +1,101 @@
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+div.container-xxl {
+    padding: 1em 2em;
+}
+
+/*=========== Hero ============*/
+
+#hero {
+    margin-top: 3em;
+}
+
+#hero .hero-section h1 span{
+    font-size: 120px;
+    font-weight: 600;
+
+}
+
+#hero .hero-section h5{
+    letter-spacing: 0.13em;
+    color: #2E2E2E;
+    font-size: 23px;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#hero .hero-section h1 span {
+    position: relative;
+}
+  
+#hero .hero-section h1 span:after {
+    border-radius: 0.5em;
+    background-color: #fff3d9;
+    content: "";
+    height: 30%;
+    position: absolute;
+    left: 0px;
+    margin-left: -0.2em;
+    top: 60%;
+    width: calc(100% + 0.4em);
+    z-index: -1;
+}
+
+#hero .hero-section .btn{
+    border-radius: 15px;
+    padding: 10px 30px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+@media screen {
+    
+}
+
+
+/* =========== Profile =========== */
+
+#profile h3 {
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+#profile .profile-section p{
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 86%;
+    margin: auto;
+}
+
+/* Activities */
+
+#activitiesPhone {
+    width: 80%;
+    margin: auto;
+    box-shadow: 0px 4px 20px 10px rgba(0,0,0,0.15);
+    border-radius: 1em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
+#activitiesPhoneDisplay {
+    background-color: red;
+    margin: auto;
+    margin-bottom: 1em;
+    height: 300px;
+    width: 80%;
+    border-radius: 1em;
+}

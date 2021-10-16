@@ -54,6 +54,7 @@ footer .contact-banner {
   box-sizing: border-box;
   border-radius: 50px;
   padding: 0.6em;
+  
 }
 
 footer .contact-banner h2 {
@@ -68,9 +69,9 @@ footer .contact-banner i {
 footer .li-whatsapp:hover,
 footer .li-whatsapp:hover h2,
 footer .li-whatsapp:hover i {
+  color: white;
   background-color: #25d366;
   border-color: #25d366;
-  color: white;
 }
 
 footer .li-email:hover h2,
@@ -122,6 +123,10 @@ footer .social-links .icon-yt:hover {
 footer .social-links .icon-dc:hover {
   background-color: #7289da;
   text-decoration: none;
+}
+
+footer .social-links .icon-ig {
+  transition: 0.3s;
 }
 
 footer .social-links .icon-ig:hover {

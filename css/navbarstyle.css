@@ -9,7 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@keyframes dd-slide-about {
+@keyframes dd-slide-abin {
   from {
     max-height: 0px;
   }
@@ -30,7 +30,7 @@ html {
 #dd-about.show {
   border-radius: 1em;
   background-color: #fff3d9;
-  animation: dd-slide-about 0.5s ease;
+  animation: dd-slide-abin 0.5s ease;
   overflow: hidden;
 }
 
@@ -110,7 +110,7 @@ html {
     flex-direction: column;
     clip-path: circle(90px at 100% -10%);
     -webkit-clip-path: circle(0px at 90% -10%);
-    transition: all 1s ease-out;
+    transition: all 1s ease-in;
     pointer-events: none;
     --ms-overflow-style: none;
     scrollbar-width: none;
@@ -157,7 +157,7 @@ html {
   top: 40px;
   right: 45px;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-in;
   z-index: 100;
 }
 
@@ -166,7 +166,7 @@ html {
   height: 5px;
   background: black;
   border-radius: 7px;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-in;
 }
 
 .menu-btn-burger::before,
@@ -177,7 +177,7 @@ html {
   height: 5px;
   background: black;
   border-radius: 7px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-in;
 }
 
 .menu-btn-burger::before {
@@ -204,13 +204,18 @@ html {
 
 .nav-link-span {
   font-weight: 600;
-  color: black;
+  color: rgb(73, 66, 66);
+  transition: .3s ease-out;
   position: relative;
 }
 
 .nav-link-span:after {
   border-radius: 0.3em;
-  background-color: #fff3d9;
+  background: linear-gradient(to left, #fff3d9 50%, rgb(253, 98, 71) 50%);
+  background-position: right;
+  background-size: 200%;
+  transition: .3s ease-out;
+  /* background-color: #fff3d9; */
   content: "";
   height: 45%;
   position: absolute;
@@ -224,5 +229,9 @@ html {
 }
 
 .nav-link:hover > .nav-link-span:after {
-  background-color: #ad310b;
+    background-position: left;
+}
+
+.nav-link:hover {
+    color: black;
 }
