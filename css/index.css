@@ -151,3 +151,19 @@ div.container-xxl {
 #footerIframe {
     display: block;
 }
+
+/* Merchandise */
+
+#merchandiseText h3 {
+font-weight: 600;
+font-size: 45px;
+text-align: center;
+}
+
+#sizeChartRow {
+    box-shadow: 0px 4px 20px 10px rgba(0,0,0,0.15);
+}
+
+#sizeChartRow .col {
+    padding: 0px;
+}

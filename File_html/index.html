@@ -144,6 +144,9 @@
         </div>
     </section>
   </div>
+
+<!-- CHECK OUT OUR LATEST EVENTS (ACTIVITIES) -->
+
   <div class="container-fluid">
     <section id="activities">
       <div id="redribbon"></div>
@@ -169,34 +172,126 @@
             </div>
             <i class="fas fa-caret-left" onclick=""></i>
             <i class="fas fa-caret-right" onclick=""></i>
-            <p></p>
           </div>
         </div>
       </div>
     </section>
   </div>
+
+<!-- MERCHANDISE  -->
+
   <div class="container-xxl">
-  
+    <section id="merchandiseSection">
+      <div id="merchandiseText">
+        <h3>Merchandise</h3>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col col-8"><img src="../Assets/img/merch_tshirt_wayang.png"></div>
+        <div class="col col-4">
+          <div class="row card" id="sizeChartRow">
+            <div class="col col-12">
+              <div class="row">Size Chart</div>
+              
+              <div class="row">
+                <div class="col col-4">Size</div>
+                <div class="col col-4">Panjang</div>
+                <div class="col col-4">Lebar</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-4">S</div>
+                <div class="col col-4">68 cm</div>
+                <div class="col col-4">48 cm</div>
+              </div>
+              
+              <div class="row">
+                <div class="col col-4">M</div>
+                <div class="col col-4">70 cm</div>
+                <div class="col col-4">50 cm</div>
+              </div>
+              
+              <div class="row">
+                <div class="col col-4">L</div>
+                <div class="col col-4">72 cm</div>
+                <div class="col col-4">52 cm</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-4">XL</div>
+                <div class="col col-4">74 cm</div>
+                <div class="col col-4">54 cm</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-4">XXL</div>
+                <div class="col col-4">76 cm</div>
+                <div class="col col-4">56 cm</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-4">XXXL</div>
+                <div class="col col-4">78 cm</div>
+                <div class="col col-4">58 cm</div>
+              </div>
+
+              <div class="row">
+                <div class="col col-4">XXXXL</div>
+                <div class="col col-4">80 cm</div>
+                <div class="col col-4">60 cm</div>
+              </div>
+
+              
+            </div>
+          </div>
+          <div class="row mt-4 card">
+            <div class="row">Material</div>
+            <div class="row">Cotton Combed 30s</div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 
+  <div class="container-fluid">
+    <section id="activities">
+      <!-- <div id="redribbon"></div> -->
+      <div class="container-xxl">
+        <div class="row justify-content-center">
+          <div class="col col-1"></div>
+          <div class="col col-3 text-center" id="activitiesPhone">
+            <div id="activitiesPhoneDisplay">
+              
+            </div>
+            <i class="fas fa-caret-left" onclick=""></i>
+            <i class="fas fa-caret-right" onclick=""></i>
+          </div>
+        </div>
+        <div class="col col-7">
+          <div class="row" id="Cuhk-Shenzhen">
+              <img src="../Assets/img/image 1.svg" alt="Cuhk-Shenzhen">
+          </div>
+          <div class="row">
+              <img src="../Assets/img/image 3.svg" alt="Sustech">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+    
+  
 
+ 
+ 
   <!-- Footer (iframe + VanillaJS) -->
   <iframe class="footerIframe" src="footer.html" frameborder="0" scrolling="no" onload="adjust()"></iframe>
   <script>
     let footer = document.querySelector(".footerIframe");
-    // const navbarOffset = document.querySelector("#navbarOffset");
-    // const mainContent = document.querySelector("#maincontent");
-    // const navbar = document.querySelector("iframe[src='navbar.html']");
     function adjust() {
       console.log(footer.contentWindow.document.body.scrollHeight + 'px');
       footer.style.position = "relative";
       footer.style.height = footer.contentWindow.document.body.scrollHeight + 'px';
       footer.style.width = "calc(100vw - (-10px))";
-      // navbar.style.height = "350px";
-      // let navbarheight = navbar.getBoundingClientRect().height;
-      // navbarOffset.style.height = navbarheight + "px";
-      // navbar.style.height = "100vh";
-      // footer.style.width = "calc(" + window.innerWidth + "px - 18px)";
     }
     window.onresize = adjust;
 
