@@ -17,13 +17,12 @@ div.container-xxl {
 /*=========== Hero ============*/
 
 #hero {
-    margin-top: 3em;
+    margin-top: 5em;
 }
 
 #hero .hero-section h1 span{
     font-size: 120px;
     font-weight: 600;
-
 }
 
 #hero .hero-section h5{
@@ -37,7 +36,7 @@ div.container-xxl {
 
 #hero .hero-section h1 span {
     position: relative;
-    z-index: -2;
+    z-index: 3;
 }
   
 #hero .hero-section h1 span:after {
@@ -63,8 +62,16 @@ div.container-xxl {
     font-weight: 300;
 }
 
-@media screen {
+@media screen and (max-width: 767px){
+    #hero{
+        text-align: center;
+        margin-top: 5em;
+    }
     
+    #hero .hero-section h1 span{
+        font-size: 75px;
+        font-weight: 600;
+    }
 }
 
 /* =========== Profile =========== */
@@ -94,7 +101,7 @@ div.container-xxl {
     position: absolute;
     background-color: red;
     height: 70%;
-    width: calc(100vw - 17px);
+    width: calc(100vw - (-10px));
     z-index: -10;
     margin-top: 5%;
     left: -17px;

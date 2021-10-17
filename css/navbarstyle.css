@@ -89,9 +89,15 @@ html {
   margin-right: 2em;
 }
 
+@media screen and (max-width:991px) {
+  .logo-ppit {
+    width: 75px;
+  }
+}
+
 .mobile-nav-links {
   position: inherit;
-  z-index: 0;
+  z-index: 9999;
   margin-bottom: auto;
 }
 

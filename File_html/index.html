@@ -53,6 +53,7 @@
     
     <!-- ========= Main CSS ========== -->
     <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/navbarstyle.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <!-- ========= Icon ========= -->
@@ -63,18 +64,66 @@
   </head>
   <body>
 
+  <nav>
+    <div class="navbar navbar-expand-lg navbar-light">
+    
+      <div class="container-xxl justify-content-start" id="mainNavbarContainer">
+        <!-- <a class="navbar-brand">PPIT Shenzhen</a> -->
+  
+        <!-- Hamburger Section -->
+        <img src="../Assets/img/logo/PPIT_Shenzhen_Logo.png" alt="PPIT Shenzhen" class="logo-ppit"/>
+  
+        <div class="menu-btn dd-sm-block d-md-block d-lg-none">
+          <div class="menu-btn-burger"></div>
+        </div>
+  
+        <div class="mobile-nav-links">
+  
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"><span class="nav-link-span" >Home</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="nav-link-span">About</span>
+                </a>
+                <ul class="dropdown-menu" id="dd-about" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">PPIT Shenzhen</a></li>
+                  <li><a class="dropdown-item" href="#">Visi Misi</a></li>
+                  <li><a class="dropdown-item" href="#">Committee</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span class="nav-link-span">Activity</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="nav-link-span">Information</span>
+                </a>
+                <ul class="dropdown-menu" id="dd-info" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">About Shenzhen</a></li>
+                  <li><a class="dropdown-item" href="#">Shenzhen Universities</a></li>
+                  <li><a class="dropdown-item" href="#">Blogs</a></li>
+                  <li><a class="dropdown-item" href="#">FAQs</a></li>
+                  <li><a class="dropdown-item" href="#">Latest News</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span class="nav-link-span">Career</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span class="nav-link-span">Contact</span></a>
+              </li>
+            </ul>
+          </div>
+        </div> 
+      </div>
+  </nav>
+  
   <!-- Navbar (JQUERY) -->
-  <iframe src="navbar.html" style="width: 100vw; position: absolute; top: 0px; background: transparent; z-index: 0;" frameborder="0" scrolling="no" onload="adjust()"></iframe>
-  <div id="navbarOffset" style="z-index: -10;"></div>
-
-    <!-- <nav id="nav-placeholder">
-
-    </nav>
-    <script>
-      $(function() {
-        $("#nav-placeholder").load("navbar.html");
-      })
-    </script> -->
+  <!-- <iframe src="navbar.html" style="width: 100vw; position: relative; top: 0px; background: transparent; z-index: 0;" frameborder="0" scrolling="no" onload="adjust()"></iframe>
+  <div id="navbarOffset" style="z-index: -10;"></div> -->
 
   <!-- Main Content -->
   <div class="container-xxl" id="maincontent">
@@ -141,11 +190,9 @@
     function adjust() {
       console.log(footer.contentWindow.document.body.scrollHeight + 'px');
       footer.style.position = "relative";
-      footer.style.bottom = 0;
-      // footer.style.left = 0;
       footer.style.height = footer.contentWindow.document.body.scrollHeight + 'px';
-      footer.style.width = "calc(100vw - 17px)";
-      // navbar.style.height = "inherit";
+      footer.style.width = "calc(100vw - (-10px))";
+      // navbar.style.height = "350px";
       // let navbarheight = navbar.getBoundingClientRect().height;
       // navbarOffset.style.height = navbarheight + "px";
       // navbar.style.height = "100vh";
@@ -166,6 +213,7 @@
 
   <!-- =========== Template Main JS File =========== -->
   <script src="../javascript/index.js"></script>
+  <script src="../javascript/navbar.js"></script>
 
 </body>
 
