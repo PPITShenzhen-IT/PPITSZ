@@ -1,12 +1,9 @@
-* {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  color: white;
-}
-
 footer {
   background-color: #323232;
   margin: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: white;
 }
 
 footer .row {
@@ -83,6 +80,7 @@ footer .li-email:hover i {
 }
 
 footer .contact-us-ul a {
+  color: white;
   text-decoration: none;
 }
 
@@ -99,6 +97,10 @@ footer .social-links a {
   height: 50px;
   transition: 0.3s;
   text-decoration: none;
+}
+
+footer .social-links a i {
+  font-size: 24px;
 }
 
 footer .social-links a:last-of-type {

@@ -34,12 +34,12 @@ div.container-xxl {
     margin-bottom: 1em;
 }
 
-#hero .hero-section h1 span {
+.highlight span {
     position: relative;
     z-index: 3;
 }
   
-#hero .hero-section h1 span:after {
+.highlight span:after {
     border-radius: 0.5em;
     background-color: #fff3d9;
     content: "";
@@ -97,7 +97,7 @@ div.container-xxl {
     position: relative;
 }
 
-#redribbon {
+.redribbon {
     position: absolute;
     background-color: red;
     height: 70%;
@@ -107,7 +107,7 @@ div.container-xxl {
     left: -17px;
 }
 
-#activitiesTitle {
+#activitiesTitle span{
     font-size: 45px;
     font-weight: 600;
 }
@@ -154,16 +154,89 @@ div.container-xxl {
 
 /* Merchandise */
 
-#merchandiseText h3 {
-font-weight: 600;
-font-size: 45px;
-text-align: center;
+#merchandiseText {
+    color: #2c2c2c;
+    text-align: center;
+    margin: 4em auto;
+}
+
+#merchandiseText h3 span {
+    font-weight: 600;
+    font-size: 75px;
+}
+
+#merchandiseImage {
+    margin-left: -5em;
+    margin-top: -2em;
 }
 
 #sizeChartRow {
     box-shadow: 0px 4px 20px 10px rgba(0,0,0,0.15);
+    border-radius: 0px 15px 15px 0px;
+    border-left: 3px solid #EC2429;
+    padding: 2.5em;
+    z-index: 10;
 }
 
-#sizeChartRow .col {
+#sizeChartRow .col, #materialChartRow .row {
     padding: 0px;
+}
+
+.chartTitle {
+    font-size: 20px;
+}
+
+#materialChartRow {
+    box-shadow: 0px 4px 20px 10px rgba(0,0,0,0.15);
+    border-radius: 0px 15px 15px 0px;
+    border-left: 3px solid #2C2C2C;
+    padding: 2.5em;
+}
+
+#merchandiseDesignArea {
+    position: relative;
+}
+
+.circle{
+    position: absolute;
+    background-color: #fff3d9;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle1 {
+    height: 120px;
+    width: 120px;
+    left: -180px;
+    top: 65%;
+}
+
+.circle2 {
+    height: 130px;
+    width: 130px;
+    left: 80%;
+  
+}
+
+/* ============= Study In Shenzhen =============*/
+
+#studytitle {
+    text-align: center;
+    margin: auto;
+}
+
+#studytitle span{
+    color: #2c2c2c;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+#studyInSZCard {
+    background-color: white;
+    padding: 3em 4em;
+}
+
+#redribbon2 {
+    max-height: 350px;
+    height: 50%;
 }
