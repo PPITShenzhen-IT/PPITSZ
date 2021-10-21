@@ -32,6 +32,7 @@ div.container-xxl {
     font-weight: 500;
     margin-top: 1em;
     margin-bottom: 1em;
+    max-width: 27em;
 }
 
 .highlight span {
@@ -69,12 +70,36 @@ div.container-xxl {
     }
     
     #hero .hero-section h1 span{
-        font-size: 75px;
+        font-size: 15vw;
         font-weight: 600;
+    }
+
+    #hero .hero-section h5 {
+        font-size: 20px;
     }
 }
 
 /* =========== Profile =========== */
+
+#profile h3 span {
+    position: relative;
+    z-index: 3;
+    font-size: 45px;
+    font-weight: 600;
+}
+  
+#profile h3 span:after {
+    border-radius: 0.5em;
+    background-color: #fff3d9;
+    content: "";
+    height: 20%;
+    position: absolute;
+    left: 0px;
+    top: 60%;
+    margin-left: -0.2em;
+    width: calc(100% + 0.4em);
+    z-index: -1;
+}
 
 #profile h3 {
     margin-top: 3em;
@@ -90,7 +115,29 @@ div.container-xxl {
     margin: auto;
 }
 
-/* Activities */
+/* @media screen and (max-width: 991px) {
+    #profile-title-container {
+        justify-content: center;
+    }
+    #profile h3 span{
+        display: inline-block;
+        width:90vw;
+        height: 30vw;
+    }   
+} */
+
+@media screen and (max-width: 767px) {
+    #profile h3 span{
+        font-size: 45px;
+    }
+
+    #profile h3 span:after{
+        width: calc(100% + 0.4em);
+        margin-top: 25px;
+    }
+}
+
+/* =========== Activities =========== */
 
 #activities{
     margin-top: 7em;
@@ -150,6 +197,52 @@ div.container-xxl {
 
 #footerIframe {
     display: block;
+}
+
+@media screen and (max-width: 991px) {
+    #activitiesTitleMobile {
+        text-align: center;
+        background-color: white;
+    }
+
+    #activitiesTitleMobile span{
+        font-size: 45px;
+        font-weight: 600;
+    }
+
+    #activitiesPhone {
+        width: 306.5px;
+    }
+
+    #activities .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #activitiesInfoCol {
+        order: 1;
+    }
+    #activitiesPhone {
+        order: 2;
+    }
+    
+    #activitiesInfoCol {
+        padding: 2em 1em;
+    }
+
+    #activitiesText {
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    #activitiesHeadline {
+        font-size: 20px;
+        font-weight: 600;
+    }
 }
 
 /* Merchandise */
@@ -215,10 +308,46 @@ div.container-xxl {
     height: 130px;
     width: 130px;
     left: 80%;
+    top: 0%;
   
 }
 
+@media screen and (max-width: 767px) {
+
+    #merchandiseText h3 span{
+        font-size: 12vw;
+        text-align: center;
+    }
+    .circle{ 
+        display: none;
+    }
+    /* #sizeChartRow{
+        display: none;
+    }
+    #materialChartRow{
+        display: none;
+    } */
+    
+}
+
 /* ============= Study In Shenzhen =============*/
+
+#studyPhone {
+    background-color: white;
+    box-shadow: 0px 4px 20px 10px rgba(0,0,0,0.15);
+    border-radius: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#studyPhoneDisplay {
+    background-color: #fff3d9;
+    margin: auto;
+    margin-bottom: 1.6em;
+    height: 475px;
+    width: 95%;
+    border-radius: 1em 1em 0em 0em;
+}
 
 #studytitle {
     text-align: center;
@@ -239,4 +368,24 @@ div.container-xxl {
 #redribbon2 {
     max-height: 350px;
     height: 50%;
+}
+
+@media screen and (max-width: 991px) {
+    #studytitle span{
+        font-size: 10vw;
+        font-weight: 600;
+    }
+
+    #Study .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #studyInSzCard {
+        order: 2;
+    }
+    #studyPhone {
+        order: 1;
+        width: 306.5px;
+    }
 }
