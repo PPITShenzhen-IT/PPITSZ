@@ -200,6 +200,11 @@ div.container-xxl {
 }
 
 @media screen and (max-width: 991px) {
+    #activities .redribbon{
+        margin-top: 30px;
+        height: 50%;
+    }
+    
     #activitiesTitleMobile {
         text-align: center;
         background-color: white;
@@ -208,6 +213,7 @@ div.container-xxl {
     #activitiesTitleMobile span{
         font-size: 45px;
         font-weight: 600;
+        margin-bottom: 4vh;
     }
 
     #activitiesPhone {
@@ -223,6 +229,7 @@ div.container-xxl {
 
     #activitiesInfoCol {
         order: 1;
+        margin-top: 3vh;
     }
     #activitiesPhone {
         order: 2;
@@ -233,7 +240,7 @@ div.container-xxl {
     }
 
     #activitiesText {
-        margin: auto;
+        margin:auto;
     }
 
 }
