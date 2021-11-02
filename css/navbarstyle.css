@@ -131,8 +131,8 @@ html {
   }
 
   .mobile-nav-links.open {
-    clip-path: circle(1200px at 90% -10%);
-    -webkit-clip-path: circle(1200px at 90% -10%);
+    clip-path: circle(1400px at 90% -10%);
+    -webkit-clip-path: circle(1400px at 90% -10%);
     pointer-events: all;
     overflow: scroll;
   }
@@ -159,6 +159,13 @@ html {
     border-top: 0.6em solid;
     border-right: 0.4em solid transparent;
     border-left: 0.4em solid transparent;
+  }
+
+  .dropdown-item{
+    text-align: center;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: large;
   }
 }
 
