@@ -128,3 +128,10 @@ div.container-xxl {
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 767px){
+    .contact-title h3 span{
+        font-weight: 600;
+        font-size: 40px;
+    }
+}
