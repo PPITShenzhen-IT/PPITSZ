@@ -52,4 +52,47 @@ div.container-xxl {
     padding-top: 1em;
 }
 
+.FAQ-image img{
+    position: relative;
+    height: 25em; 
+    margin-bottom:3em;  
+}
+
+.section-faq .card {
+    margin-bottom: 25px;
+    border-radius: 5px !important;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 4px 8px 0 rgba(0, 0, 0, 0.04),
+        0 16px 24px 0 rgba(0, 0, 0, 0.04), 0 24px 32px 0 rgba(0, 0, 0, 0.04);
+    border: solid 1px #e5e5e5;
+    background-color: #fff3d9;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.section-faq .card .fa-chevron-up {
+    transform: rotate(0deg);
+    transition: transform 0.25s ease;
+}
+
+.section-faq .card .collapsed .fa-chevron-up {
+    transform: rotate(180deg);
+    transition: transform 0.25s ease;
+}
+
+.section-faq .card-header {
+    background-color: #fff3d9 !important;
+    color: var(--text-dark);
+    font-weight: 400;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.section-faq .accordion .magic-container {
+    align-content: flex-start;
+}
+
+.section-faq .accordion .card-header p {
+    margin-bottom: 0px;
+}
+
 
