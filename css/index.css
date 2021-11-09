@@ -115,17 +115,6 @@ div.container-xxl {
     margin: auto;
 }
 
-/* @media screen and (max-width: 991px) {
-    #profile-title-container {
-        justify-content: center;
-    }
-    #profile h3 span{
-        display: inline-block;
-        width:90vw;
-        height: 30vw;
-    }   
-} */
-
 @media screen and (max-width: 767px) {
     #profile h3 span{
         font-size: 45px;
