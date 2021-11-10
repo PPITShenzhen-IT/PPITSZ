@@ -44,7 +44,7 @@ html {
   overflow: hidden;
 }
 
-.collapse:not(.show) {
+nav .collapse:not(.show) {
   display: inherit;
 }
 
