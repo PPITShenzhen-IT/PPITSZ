@@ -54,8 +54,14 @@ div.container-xxl {
 
 .FAQ-image img{
     position: relative;
-    height: 25em; 
+    height: 22em; 
     margin-bottom:3em;  
+}
+
+@media screen and (min-width:991px){
+    .FAQ-image img{
+        margin-left: 100px;
+    }
 }
 
 .section-faq .card {
