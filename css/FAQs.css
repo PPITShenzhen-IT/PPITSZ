@@ -45,13 +45,27 @@ div.container-xxl {
     font-size: 53px;
 }
 
+@media screen and (max-width:767px) {
+    .FAQ-title{
+        text-align: center;
+    }
+    
+    .FAQ-title h3 span{
+        font-size: 40px;
+    }
+}
+
 .FAQ-text{
     color: #2c2c2c;
     text-align: left;
-    max-width: 45%;
     padding-top: 1em;
 }
 
+@media screen and (max-width:767px) {
+    .FAQ-text{
+        text-align: center;
+    }
+}
 .FAQ-image img{
     position: relative;
     height: 22em; 
@@ -61,6 +75,12 @@ div.container-xxl {
 @media screen and (min-width:991px){
     .FAQ-image img{
         margin-left: 100px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .FAQ-image img{
+        height: 17em;
     }
 }
 
