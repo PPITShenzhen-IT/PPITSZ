@@ -66,6 +66,7 @@ div.container-xxl {
         text-align: center;
     }
 }
+
 .FAQ-image img{
     position: relative;
     height: 22em; 
@@ -74,7 +75,7 @@ div.container-xxl {
 
 @media screen and (min-width:991px){
     .FAQ-image img{
-        margin-left: 100px;
+        margin-left: 00px;
     }
 }
 
@@ -90,7 +91,7 @@ div.container-xxl {
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 4px 8px 0 rgba(0, 0, 0, 0.04),
         0 16px 24px 0 rgba(0, 0, 0, 0.04), 0 24px 32px 0 rgba(0, 0, 0, 0.04);
     border: solid 1px #e5e5e5;
-    background-color: #fff3d9;
+    background-color: white;
     color: var(--text-primary);
     cursor: pointer;
 }
