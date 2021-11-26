@@ -23,6 +23,8 @@
   z-index: -1;
 }
 
+/* PROFILE */
+
 .profile-title h3 span {
   font-weight: 600;
   font-size: 60px;
@@ -34,9 +36,6 @@
 
 .prof-desc {
   position: relative;
-}
-
-.prof-desc {
   height: 380px;
   display: flex;
   background: url(../Assets/about/prof-ban.svg) no-repeat;
@@ -55,4 +54,155 @@
   padding-top: 10%;
   text-align: end;
   color: white;
+}
+
+/* VISI */
+
+.visi-div {
+  color: #fff3d9;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.visi-title {
+  color: #323232;
+  padding: 0;
+  margin-bottom: -50px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 80px;
+}
+
+.visi {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  padding-top: 40px;
+  background-color: #323232;
+}
+
+.visi-title-2 {
+  color: #fff3d9;
+  padding: 0;
+  margin-top: -86px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 80px;
+}
+
+.visi-desc {
+  font-weight: 600px;
+  font-size: 50px;
+  text-align: center;
+}
+
+/* MISI */
+
+.misi-title {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 800;
+  padding: 10px;
+}
+
+.misi {
+  margin-top: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.misi div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 230px;
+  height: 455.5px;
+}
+
+.misi-1 {
+  background: url("../Assets/about/misi-1.svg") no-repeat;
+  background-size: cover;
+}
+
+.misi-1-text {
+  font-size: 25px;
+  line-height: 1.4;
+  color: white;
+}
+
+.misi-1-num {
+  font-size: 50px;
+  color: white;
+}
+
+.misi-2 {
+  background: url("../Assets/about/misi-2.svg") no-repeat;
+  background-size: cover;
+}
+
+.misi-2-text {
+  font-size: 25px;
+  color: #333333;
+}
+
+.misi-2-num {
+  font-size: 50px;
+  color: #333333;
+}
+
+.misi-3 {
+  background: url("../Assets/about/misi-3.svg") no-repeat;
+  background-size: cover;
+}
+
+.misi-3-text {
+  font-size: 25px;
+  color: white;
+}
+
+.misi-3-num {
+  font-size: 50px;
+  color: white;
+}
+
+.misi-4 {
+  background: url("../Assets/about/misi-4.svg") no-repeat;
+  background-size: cover;
+}
+
+.misi-4-text {
+  font-size: 21px;
+  line-height: 1.8;
+  color: #dae3e5;
+}
+
+.misi-4-num {
+  font-size: 50px;
+  color: #dae3e5;
+}
+
+.misi-5 {
+  background: url("../Assets/about/misi-5.svg") no-repeat;
+  background-size: cover;
+}
+
+.misi-5-text {
+  font-size: 25px;
+  color: #353535;
+}
+
+.misi-5-num {
+  font-size: 50px;
+  color: #353535;
 }

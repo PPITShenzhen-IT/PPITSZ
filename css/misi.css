@@ -1,0 +1,167 @@
+* {
+  font-family: "Poppins";
+}
+
+h3 {
+  font-weight: 800;
+  padding: 10px;
+}
+
+.misi {
+  padding: 20px 40px;
+  display: flex;
+  column-gap: 20px;
+}
+
+.misi-1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 177px;
+  height: 350px;
+  background: url("../Assets/about/misi-1.svg") no-repeat;
+  background-size: cover;
+}
+
+.misi-1-text {
+  font-size: 20px;
+  line-height: 1.4;
+  color: white;
+}
+
+.misi-1-num {
+  font-size: 40px;
+  color: white;
+}
+
+.misi-2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 177px;
+  height: 350px;
+  background: url("../Assets/about/misi-2.svg") no-repeat;
+  background-size: cover;
+}
+
+.misi-2-text {
+  font-size: 21.5px;
+  color: #333333;
+}
+
+.misi-2-num {
+  font-size: 40px;
+  color: #333333;
+}
+
+.misi-3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 177px;
+  height: 350px;
+  background: url("../Assets/about/misi-3.svg") no-repeat;
+  background-size: cover;
+}
+
+.misi-3-text {
+  font-size: 21px;
+  color: white;
+}
+
+.misi-3-num {
+  font-size: 40px;
+  color: white;
+}
+
+.misi-4 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 177px;
+  height: 350px;
+  background: url("../Assets/about/misi-4.svg") no-repeat;
+  background-size: cover;
+}
+
+.misi-4-text {
+  font-size: 17.5px;
+  line-height: 1.8;
+  color: #dae3e5;
+}
+
+.misi-4-num {
+  font-size: 40px;
+  color: #dae3e5;
+}
+
+.misi-5 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 177px;
+  height: 350px;
+  background: url("../Assets/about/misi-5.svg") no-repeat;
+  background-size: cover;
+}
+
+.misi-5-text {
+  font-size: 21px;
+  color: #353535;
+}
+
+.misi-5-num {
+  font-size: 40px;
+  color: #353535;
+}
+
+/* VISI */
+
+.visi-div {
+  color: #fff3d9;
+}
+
+.visi-title {
+  color: #323232;
+  padding: 0;
+  margin-bottom: -50px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 80px;
+}
+
+.visi-title-2 {
+  color: #fff3d9;
+  padding: 0;
+  margin-top: -86px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 80px;
+}
+
+.visi {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  padding-top: 40px;
+  background-color: #323232;
+}
+
+.visi-desc {
+  font-weight: 600px;
+  font-size: 50px;
+  text-align: center;
+}
