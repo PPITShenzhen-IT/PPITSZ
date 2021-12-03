@@ -1,19 +1,20 @@
-.selectDivision .d-flex div {
+.selectDivision .d-flex button {
     box-sizing: border-box;
     font-size: 1.2em;
-    font-weight: 800;
-    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.25);
-    padding: 1em 2em;
+    font-weight: 600;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    padding: 0.5em 2em;
     border-radius: 0px 0px 15px 15px;
     transition: all 0.5s ease;
-
+    background-color: white;
+    border: none;
 }
 
-.selectDivision .d-flex div.active {
+.selectDivision .d-flex button.active {
     border-top: 3px solid #CE2F2F;
 }
 
-.selectDivision .d-flex div:hover {
+.selectDivision .d-flex button:hover {
     transform: scale(1.05);
 }
 
@@ -36,5 +37,77 @@
 
 .carousel-item h2 {
     font-size: 2.4em;
+    font-weight: 600;
+}
+
+.nametag-long {
+    background-image: url("../Assets/img/committee/backplate-long.png");
+    padding: 27.573% 0 0 0;
+}
+
+.nametag-short {
+    background-image: url("../Assets/img/committee/backplate-short.png");
+    padding: 32.87% 0 0 0;
+}
+
+.nametag-long, .nametag-short {
+    position: relative;
+    width: 100%;
+    height: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.avatar img {
+    width: 80%;
+    margin: auto;
+}
+
+.name {
+    position: absolute;
+    color: white;
+    top: 0;
+}
+
+.occupation {
+    position: absolute;
+    color: #555;
+}
+
+.nametag-long .name {
+    left: -8.5%;
+    width: 100%;
+    height: 64%;
+    padding-top: 2.4%;
+    font-size: 1.8em;
+    font-weight: 100;
+}
+
+.nametag-long .occupation {
+    top: 64%;
+    left: 4%;
+    width: 100%;
+    height: 36%;
+    padding-top: 1.6%;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.nametag-short .name {
+    left: -10%;
+    width: 100%;
+    height: 64%;
+    padding-top: 4%;
+    font-size: 1.35em;
+    font-weight: 100;
+}
+
+.nametag-short .occupation {
+    top: 64%;
+    left: 5%;
+    width: 100%;
+    height: 36%;
+    padding-top: 2%;
+    font-size: 0.85em;
     font-weight: 600;
 }
