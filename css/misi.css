@@ -165,3 +165,41 @@ h3 {
   font-size: 50px;
   text-align: center;
 }
+
+.carousel-container {
+  width: 177px;
+  height: 350px;
+}
+
+.carousel-item .misi-1-text {
+  display: table;
+  font-size: 17px;
+  margin-left: -12px;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.carousel-item .misi-3-text {
+  font-size: 17px;
+  padding-bottom: 80px;
+}
+
+.carousel-item .misi-5-text {
+  font-size: 17px;
+  margin-left: -5px;
+  padding-bottom: 80px;
+}
+
+.carousel-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.misi-car-title {
+  text-align: center;
+}
+
+.misi-car-num {
+  text-align: center;
+}

@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.misi-small {
+  display: none;
+}
+
 .highlight span {
   position: relative;
   z-index: 3;
@@ -44,7 +48,7 @@
 
 .left-ban img {
   position: absolute;
-  left: 380px;
+  left: 300px;
   bottom: 30px;
   width: 15%;
   height: auto;
@@ -95,7 +99,7 @@
 
 .visi-desc {
   font-weight: 600px;
-  font-size: 50px;
+  font-size: 1.5em;
   text-align: center;
 }
 
@@ -118,6 +122,8 @@ h3 {
   margin-right: 0;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+  align-items: center;
 }
 
 .misi div {
@@ -205,4 +211,64 @@ h3 {
 .misi-5-num {
   font-size: 50px;
   color: #353535;
+}
+
+@media screen and (max-width: 784px) {
+  .misi {
+    display: none;
+  }
+
+  .misi-small {
+    display: block;
+    align-items: center;
+  }
+
+  .carousel-container {
+    width: 200px;
+    height: 395px;
+  }
+
+  .carousel-item .misi-1-text {
+    display: table;
+    font-size: 17px;
+    margin-left: -3px;
+    text-align: center;
+  }
+
+  .carousel-item .misi-2-text {
+    display: table;
+    font-size: 17px;
+    margin-left: -12px;
+    padding-top: 12px;
+    text-align: center;
+  }
+
+  .carousel-item .misi-3-text {
+    display: table;
+    font-size: 17px;
+  }
+
+  .carousel-item .misi-4-text {
+    font-size: 17px;
+    margin-left: -5px;
+  }
+
+  .carousel-item .misi-5-text {
+    font-size: 17px;
+    margin-left: -5px;
+  }
+
+  .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .misi-car-title {
+    text-align: center;
+  }
+
+  .misi-car-num {
+    text-align: center;
+  }
 }
