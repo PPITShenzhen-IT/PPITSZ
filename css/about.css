@@ -46,6 +46,12 @@
   background-size: cover;
 }
 
+@media screen and (max-width:767px) {
+  .prof-desc {
+    display: none;
+  }
+}
+
 .left-ban img {
   position: absolute;
   left: 300px;
