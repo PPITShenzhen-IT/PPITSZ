@@ -105,7 +105,7 @@
 
 .visi-desc {
   font-weight: 600px;
-  font-size: 1.5em;
+  font-size: 3vw;
   text-align: center;
 }
 
@@ -220,6 +220,10 @@ h3 {
 }
 
 @media screen and (max-width: 784px) {
+  .visi-desc {
+    font-size: 30px;
+  }
+
   .misi {
     display: none;
   }
@@ -230,20 +234,25 @@ h3 {
   }
 
   .carousel-container {
-    width: 200px;
-    height: 395px;
+    width: 320px;
+    height: 632px;
+  }
+
+  .misi-car-title {
+    padding-bottom: 80px;
   }
 
   .carousel-item .misi-1-text {
     display: table;
-    font-size: 17px;
+    font-size: 28px;
     margin-left: -3px;
+    padding-bottom: 120px;
     text-align: center;
   }
 
   .carousel-item .misi-2-text {
     display: table;
-    font-size: 17px;
+    font-size: 34px;
     margin-left: -12px;
     padding-top: 12px;
     text-align: center;
@@ -251,16 +260,17 @@ h3 {
 
   .carousel-item .misi-3-text {
     display: table;
-    font-size: 17px;
+    font-size: 30px;
   }
 
   .carousel-item .misi-4-text {
-    font-size: 17px;
+    font-size: 34px;
+    line-height: 1;
     margin-left: -5px;
   }
 
   .carousel-item .misi-5-text {
-    font-size: 17px;
+    font-size: 30px;
     margin-left: -5px;
   }
 
