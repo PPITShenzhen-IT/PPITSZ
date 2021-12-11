@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+.prof-desc-mobile {
+  display: none;
+}
+
 .misi-small {
   display: none;
 }
@@ -46,9 +50,52 @@
   background-size: cover;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:850px) {
   .prof-desc {
     display: none;
+  }
+
+  .prof-desc-mobile {
+    display: block;
+  }
+
+  .prof-desc-mobile p {
+    padding: 2em 1.5em;
+  }
+
+  .prof-mobile-upper {
+    font-size: 1.2em;
+    position: relative;
+    background: url(../Assets/about/prof-left-ban-r.svg) no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+  }
+  .upper-spacer {
+    height: 10em;
+  }
+
+  p {
+    margin-bottom: 0px;
+  }
+
+  .prof-mobile-lower {
+    color: white;
+    font-size: 1.2em;
+    position: relative;
+    margin-top: -140px;
+    min-height: 40.45vw;
+    background: url(../Assets/about/prof-right-ban-r.svg) no-repeat;
+    background-size: cover;
+    text-align: end;
+  }
+
+  .prof-mobile-lower p {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .lower-spacer {
+    height: min( 110vw, 380px );
   }
 }
 
@@ -61,7 +108,7 @@
 }
 
 .right-ban {
-  padding-top: 10%;
+  margin-top: auto;
   text-align: end;
   color: white;
 }

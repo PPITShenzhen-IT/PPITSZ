@@ -32,6 +32,12 @@ div.container-xxl {
     z-index: -1;
 }
 
+@media screen and (max-width:767px) {
+    .highlight span:after{
+        display:none;
+    }
+}
+
 /* ======= FAQ HERO ======= */
 
 .FAQ-title{
