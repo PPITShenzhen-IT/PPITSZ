@@ -135,7 +135,7 @@ div.container-xxl {
 
 .redribbon {
     position: absolute;
-    background-color: red;
+    background-color: #EC2429;
     height: 70%;
     width: calc(100vw - (-10px));
     z-index: -10;

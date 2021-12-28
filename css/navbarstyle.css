@@ -75,7 +75,7 @@ nav .collapse:not(.show) {
 
 .dropdown-menu li:hover {
   display: block;
-  color: #ec2429;
+  color: #EC2429;
   font-weight: 300;
   transition-property: background-color, border-color, color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
