@@ -16,6 +16,13 @@ div.container-xxl {
 
 /*=========== Hero ============*/
 
+.pic-accordion img{
+    position: absolute;
+    top: 0;
+    right: -100px;
+    height: 100vh;
+}
+
 #hero {
     margin-top: 5em;
 }
