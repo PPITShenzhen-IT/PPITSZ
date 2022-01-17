@@ -27,8 +27,6 @@ div.container-xxl {
     z-index: -1;
 }
 
-
-
 #hero {
     margin-top: 5em;
 }
@@ -319,6 +317,24 @@ div.container-xxl {
     left: 80%;
     top: 0%;
   
+}
+
+.carousel-control-next{
+    right: -8em;
+}
+
+.carousel-control-prev{
+    left: -8em;
+}
+
+@media screen and (max-width: 767px) {
+    .carousel-control-next{
+        right: 0em;
+    }
+    
+    .carousel-control-prev{
+        left: 0em;
+    }
 }
 
 @media screen and (max-width: 767px) {
