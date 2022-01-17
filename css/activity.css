@@ -14,7 +14,7 @@ div.container-xxl {
     padding: 1em 2em;
 }
 
-/* ===== CAREER TITLE ===== */
+/* ===== Activity title ===== */
 
 .activity-title {
     color: #2c2c2c;
@@ -73,4 +73,24 @@ div.container-xxl {
     height: 100000px;
     width: 480px;
     z-index: -1;
+}
+
+@media screen and (max-width:767px) {
+    .activity-title{
+        text-align: center;
+    }
+    
+    .activity-title h3 span{
+        font-size: 60px;
+    }
+
+    .activity-list h3{
+        font-weight: 600;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .activity-list p{
+        font-size: 15px;
+    }
 }
