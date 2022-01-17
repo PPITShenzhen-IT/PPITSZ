@@ -33,6 +33,28 @@ div.container-xxl {
     top: 40vh;
 }
 
+.committee-btn{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    position:absolute;
+    top: 25vh;
+    right: 25vw;
+    box-shadow: 4px 4px 58px rgba(0,0,0,0.12);
+    transition: transform .2s;
+}
+
+.committee-btn:hover{
+    transform: scale(1.1);
+}
+
+.icofont-people{
+    color: #EC2429;
+}
+
 #hero {
     margin-top: 2em;
 }
@@ -78,6 +100,11 @@ div.container-xxl {
     margin-top: 10px;
     font-size: 18px;
     font-weight: 300;
+    transition: transform .2s;
+}
+
+#hero .hero-section .btn:hover{
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 767px){
