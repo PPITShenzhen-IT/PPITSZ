@@ -45,11 +45,29 @@ div.container-xxl {
 }
 
 .shenzhen-image{
-    margin-top: 5vh;
+    margin-top: 6vh;
 }
 
 .shenzhen-text{
     margin-top: 3vh;
-    max-width: 75%;
+    margin-left: 1vw;
+    font-size: 40;
+    text-align: justify;
+}
+
+/* === Universities === */
+
+.universities-title {
+    color: #2c2c2c;
     text-align: center;
+    margin-top: 8vh;
+}
+
+.universities-title h3 span{
+    font-weight: 600;
+    font-size: 60px;
+}
+
+#universities{
+    background-color: #efefef;;
 }
