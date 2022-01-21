@@ -168,6 +168,16 @@ footer #tuantuan img {
   #footer-informationSection {
     margin-right: 1em;
   }
+
+  
+}
+
+@media (min-width: 768px) {
+  footer #visit {
+    width: max-content;
+    margin-left: -20px;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -179,5 +189,6 @@ footer #tuantuan img {
     width: 80%;
   }
 
+  
 }
 

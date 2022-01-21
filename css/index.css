@@ -353,26 +353,22 @@ div.container-xxl {
     width: 130px;
     left: 80%;
     top: 0%;
-  
 }
-
-.carousel-control-next{
-    right: -8em;
+@media screen and (min-width: 768px) and (max-width: 1020px){
+    .circle2{
+        display: none;
+    }
 }
-
-.carousel-control-prev{
-    left: -8em;
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1023px) {
     .carousel-control-next{
-        right: 0em;
+        right: -8em;
     }
-    
+
     .carousel-control-prev{
-        left: 0em;
+        left: -8em;
     }
 }
+
 
 @media screen and (max-width: 767px) {
 
