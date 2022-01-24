@@ -68,6 +68,117 @@ div.container-xxl {
     font-size: 60px;
 }
 
-#universities{
-    background-color: #efefef;;
+.section-uni{
+    margin-top: 3vh;
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.row{
+    margin-top: 6vh;
+}
+
+.container{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.container h3{
+    margin-top: 3vh;
+    margin-left: 2vh;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 42px;
+}
+
+.container h5{
+    margin: 2vh;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container p{
+    margin: 2vh;
+    margin-top: 3vh;
+    line-height: 30px;
+}
+
+.uni-btn{
+    margin-left: 2vh;
+    margin-top: 2vh;
+    background-color: #EC2429;
+    border-radius: 15px;
+    padding: 8px 35px;
+    font-size: 18px;
+    font-weight: 300;
+    box-shadow: 4px 4px 58px rgba(0,0,0,0.12);
+    transition: transform .2s;
+    max-width: fit-content;
+}
+
+.uni-btn a {
+    color: whitesmoke;
+}
+
+.uni-btn:hover{
+    transform: scale(1.1);
+}
+
+.uni-btn a:hover{
+    color: whitesmoke;
+}
+
+
+
+/* Entertainment */
+
+
+
+
+.entertainment {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+#entertainmentPhone {
+    background-color: white;
+    box-shadow: 0px 4px 20px 10px rgba(0,0,0,0.15);
+    border-radius: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#entertainmentPhoneDisplay {
+    background-color: #fff3d9;
+    margin: auto;
+    margin-bottom: 1.6em;
+    height: 475px;
+    width: 95%;
+    border-radius: 1em 1em 0em 0em;
+}
+
+.fas {
+    font-size: 50px;
+    margin: 0 40px;
+}
+
+
+/* TRANSACTION */
+.section-trans p {
+    font-family: Poppins;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.9;
+}
+
+#wechat {
+    background-color: #efefef;
+}
+
+#alipay {
+    background-color: #efefef;
 }
