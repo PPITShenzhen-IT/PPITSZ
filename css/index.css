@@ -28,27 +28,31 @@ div.container-xxl {
 }
 
 .image-pengurus{
-    position: absolute;
-    right: 0;
-    top: 40vh;
+    padding: 0px !important;
+    /* margin-top: auto;
+    transform: scale(1.25) translateX(-5%); */
+    max-width: 100%;
+    position: relative;
+    top: min(100vh, 750px);
+    height: 100%;
+    transform: scale(1.35) translateY(-133.5%) translateX(-14%);
 }
 
 .committee-btn{
     background-color: white;
     border-radius: 20px;
     padding: 10px 20px;
-    margin-top: 10px;
+    width: 13em;
     font-size: 18px;
     font-weight: 300;
-    position:absolute;
-    top: 25vh;
-    right: 25vw;
     box-shadow: 4px 4px 58px rgba(0,0,0,0.12);
     transition: transform .2s;
+    margin-bottom: 0em;
+    transform: scale(0.8);
 }
 
 .committee-btn:hover{
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
 
 .icofont-people{
