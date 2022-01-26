@@ -175,10 +175,34 @@ div.container-xxl {
     line-height: 1.9;
 }
 
+.trans-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 #wechat {
     background-color: #efefef;
+    margin: 20px;
+    width: fit-content;
+    border-radius: 20px;
+
+}
+
+#wechat img {
+    width: 200px;
 }
 
 #alipay {
     background-color: #efefef;
+    margin: 20px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+#alipay img {
+    width: 200px;
 }
