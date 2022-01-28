@@ -35,7 +35,7 @@ div.container-xxl {
     position: relative;
     top: min(100vh, 750px);
     height: 100%;
-    transform: scale(1.35) translateY(-133.5%) translateX(-14%);
+    transform: scale(1.35) translateY(-133.5%) translateX(-12%);
 }
 
 .committee-btn{
@@ -78,6 +78,24 @@ div.container-xxl {
     max-width: 27em;
 }
 
+.highlights span {
+    position: relative;
+    z-index: 3;
+}
+  
+.highlights span:after {
+    border-radius: 0.5em;
+    background-color: #fff3d9;
+    content: "";
+    height: 30%;
+    position: absolute;
+    left: 0px;
+    margin-left: -0.2em;
+    top: 60%;
+    width: calc(100% + 0.4em);
+    z-index: -1;
+}
+
 .highlight span {
     position: relative;
     z-index: 3;
@@ -94,6 +112,12 @@ div.container-xxl {
     top: 60%;
     width: calc(100% + 0.4em);
     z-index: -1;
+}
+
+@media screen and (max-width:767px){
+    .highlight span:after{
+        display: none;
+    }
 }
 
 #hero .hero-section .btn{
@@ -242,8 +266,8 @@ div.container-xxl {
 
 @media screen and (max-width: 991px) {
     #activities .redribbon{
-        margin-top: 30px;
-        height: 50%;
+        margin-top: 200px;
+        height: 35%;
     }
     
     #activitiesTitleMobile {
