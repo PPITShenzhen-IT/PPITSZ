@@ -20,7 +20,7 @@ div.container-xxl {
     position: absolute;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: min(calc(max(min(100vh, 750px), 700px) * 1.015 + 1px), 751px);
     width: 30vw;
     background-color: #fff3d9;
     color: #fff3d9;
@@ -33,10 +33,23 @@ div.container-xxl {
     transform: scale(1.25) translateX(-5%); */
     max-width: 100%;
     position: relative;
-    top: min(100vh, 750px);
+    top: max(min(100vh, 750px), 700px);
     height: 100%;
     transform: scale(1.35) translateY(-133.5%) translateX(-12%);
 }
+
+@media screen and (max-width: 1399px) {
+    .color-background {
+        height: calc(calc(max(min(100vh, 750px), 700px) * 0.991) + (max((1399px - 100vw), 0px) * 0.13));
+    }
+}
+
+@media screen and (max-width: 1256px) {
+    .color-background {
+        height: calc(calc(max(min(100vh, 750px), 700px) * 1.015) + (max((1256px - 100vw), 0px) * 0.13));
+    }
+}
+
 
 .committee-btn{
     background-color: white;
@@ -456,9 +469,10 @@ div.container-xxl {
     height: 50%;
 }
 
+
 @media screen and (max-width: 991px) {
     #studytitle span{
-        font-size: 10vw;
+        font-size: 50px;
         font-weight: 600;
     }
 

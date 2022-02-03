@@ -9,10 +9,6 @@
   display: none;
 }
 
-.misi-small {
-  display: none;
-}
-
 .highlight span {
   position: relative;
   z-index: 3;
@@ -173,7 +169,6 @@ h3 {
   margin-top: 30px;
   margin-left: 0;
   margin-right: 0;
-  display: flex;
   justify-content: space-between;
   gap: 20px;
   align-items: center;
@@ -267,14 +262,6 @@ h3 {
 }
 
 @media screen and (max-width: 784px) {
-  .misi {
-    display: none;
-  }
-
-  .misi-small {
-    display: block;
-    align-items: center;
-  }
 
   .carousel-container {
     width: 200px;
@@ -325,3 +312,4 @@ h3 {
     text-align: center;
   }
 }
+
