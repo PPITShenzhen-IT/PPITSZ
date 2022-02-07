@@ -124,7 +124,7 @@
 
   
   <div class="container-xxl selectDivision">
-    <div class="d-flex justify-content-center flex-wrap">
+    <div class="d-flex justify-content-center flex-wrap" id="pengurusButtons">
       <button data-bs-target="#committeeCarousel" data-bs-slide-to="0" class="hi mx-3 my-2 active">Badan Pengurus Harian</button>
       <button data-bs-target="#committeeCarousel" data-bs-slide-to="1" class="hi mx-3 my-2">Sosial & Kemanusiaan</button>
       <button data-bs-target="#committeeCarousel" data-bs-slide-to="2" class="hi mx-3 my-2">Media & Publikasi</button>
@@ -213,7 +213,7 @@
 
         <div class="carousel-item">
           <h2 class="mb-5">Sosial & Kemanusiaan</h2>
-          <img src="./Assets/img/committee/bph_undraw.png" class="d-block w-100" alt="...">
+          <img src="./Assets/img/committee/soskem.svg" class="d-block w-100" alt="...">
 
           <div class="row justify-content-center">
             <div class="col col-4 person">
@@ -263,7 +263,7 @@
 
         <div class="carousel-item">
           <h2 class="mb-5">Media & Publikasi</h2>
-          <img src="./Assets/img/committee/bph_undraw.png" class="d-block w-100" alt="...">
+          <img src="./Assets/img/committee/publication.svg" class="d-block w-100" alt="...">
 
           <div class="row justify-content-center">
             <div class="col col-4 person">
@@ -322,7 +322,7 @@
 
         <div class="carousel-item">
           <h2 class="mb-5">Akademis</h2>
-          <img src="./Assets/img/committee/bph_undraw.png" class="d-block w-100" alt="...">
+          <img src="./Assets/img/committee/academic.svg" class="d-block w-100" alt="...">
 
           <div class="row justify-content-center">
             <div class="col col-4 person">
@@ -381,7 +381,7 @@
 
         <div class="carousel-item">
           <h2 class="mb-5">Kewirausahaan</h2>
-          <img src="./Assets/img/committee/bph_undraw.png" class="d-block w-100" alt="...">
+          <img src="./Assets/img/committee/wirus.svg" class="d-block w-100" alt="...">
 
           <div class="row justify-content-center">
             <div class="col col-4 person">
@@ -440,7 +440,7 @@
 
         <div class="carousel-item">
           <h2 class="mb-5">Seni & Budaya</h2>
-          <img src="./Assets/img/committee/bph_undraw.png" class="d-block w-100" alt="...">
+          <img src="./Assets/img/committee/senbud.svg" class="d-block w-100" alt="...">
 
           <div class="row justify-content-center">
             <div class="col col-4 person">
@@ -500,7 +500,7 @@
 
         <div class="carousel-item">
           <h2 class="mb-5">Informasi & Teknologi</h2>
-          <img src="./Assets/img/committee/bph_undraw.png" class="d-block w-100" alt="...">
+          <img src="./Assets/img/committee/tech.svg" class="d-block w-100" alt="...">
 
           <div class="row justify-content-center">
             <div class="col col-4 person">
@@ -550,7 +550,7 @@
 
         <div class="carousel-item">
           <h2 class="mb-5">Olahraga & Pemuda</h2>
-          <img src="./Assets/img/committee/bph_undraw.png" class="d-block w-100" alt="...">
+          <img src="./Assets/img/committee/sport.svg" class="d-block w-100" alt="...">
 
           <div class="row justify-content-center">
             <div class="col col-4 person">
@@ -717,6 +717,11 @@
       }
       setContact();
       window.onresize = setContact;
+      
+
+      let pengurusButtons = document.getElementById("pengurusButtons").querySelectorAll("button")
+      console.log(pengurusButtons)
+      
     </script>
 
   </footer>
