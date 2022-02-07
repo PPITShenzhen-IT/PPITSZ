@@ -472,6 +472,10 @@ div.container-xxl {
 
 
 @media screen and (max-width: 991px) {
+    #studytitle{
+        text-align: center;
+    }
+    
     #studytitle span{
         font-size: 50px;
         font-weight: 600;
