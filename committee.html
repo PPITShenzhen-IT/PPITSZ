@@ -138,7 +138,7 @@
 
   <div class="container-xxl carouselCommittee">
     <div id="committeeCarousel" class="carousel slide" data-bs-interval="false">
-      <div class="carousel-inner text-center">
+      <div class="carousel-inner text-center" id="carousel-inner">
         <div class="carousel-item active">
           <h2 class="mb-5">Badan Pengurus Harian (BPH)</h2>
           <img src="./Assets/img/committee/bph_undraw.png" class="d-block w-100" alt="...">
@@ -719,9 +719,40 @@
       window.onresize = setContact;
       
 
+      
       let pengurusButtons = document.getElementById("pengurusButtons").querySelectorAll("button")
       console.log(pengurusButtons)
-      
+
+      function setActiveButton(index) {
+          pengurusButtons[index].classList.add("active");
+          for(let j=0; j < pengurusButtons.length; j++) {
+            if(j != index) {
+              pengurusButtons[j].classList.remove("active")
+            }
+          }
+        }
+
+      for(let i=0; i < pengurusButtons.length; i++) {
+        pengurusButtons[i].addEventListener('click', function() {setActiveButton(i)})
+      }
+
+      let carouselControlPrev = document.getElementsByClassName("carousel-control-prev")[0]
+      carouselControlPrev.addEventListener("click", function() {
+        let activeCarousel = document.getElementById("carousel-inner").getElementsByClassName("active")[0]
+        let activeCarouselIndex = Array.from(document.getElementById("carousel-inner").children).indexOf(activeCarousel)
+        console.log(activeCarouselIndex)
+        setActiveButton(activeCarouselIndex - 1 >= 0 ? (activeCarouselIndex - 1):(pengurusButtons.length - 1))
+      })
+
+      let carouselControlNext = document.getElementsByClassName("carousel-control-next")[0]
+      carouselControlNext.addEventListener("click", function() {
+        let activeCarousel = document.getElementById("carousel-inner").getElementsByClassName("active")[0]
+        let activeCarouselIndex = Array.from(document.getElementById("carousel-inner").children).indexOf(activeCarousel)
+        console.log(activeCarouselIndex)
+        setActiveButton(activeCarouselIndex + 1 < pengurusButtons.length ? (activeCarouselIndex + 1):0)
+      })
+
+
     </script>
 
   </footer>
