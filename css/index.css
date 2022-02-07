@@ -340,7 +340,7 @@ div.container-xxl {
 
 #merchandiseText h3 span {
     font-weight: 600;
-    font-size: 75px;
+    font-size: 70px;
 }
 
 #merchandiseImage {
@@ -474,6 +474,7 @@ div.container-xxl {
     #studytitle span{
         font-size: 50px;
         font-weight: 600;
+        text-align: center;
     }
 
     #Study .row {
@@ -489,3 +490,16 @@ div.container-xxl {
         width: 306.5px;
     }
 }
+
+/* ===== Sponsors ===== */
+#sponsorSection{
+    color: #2c2c2c;
+    text-align: center;
+    margin: 2em auto;
+}
+
+#sponsorSection h3 span{
+    font-weight: 600;
+    font-size: 65px;
+}
+
