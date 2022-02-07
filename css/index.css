@@ -415,7 +415,7 @@ div.container-xxl {
 @media screen and (max-width: 767px) {
 
     #merchandiseText h3 span{
-        font-size: 12vw;
+        font-size: 60px;
         text-align: center;
     }
     .circle{ 
@@ -504,3 +504,9 @@ div.container-xxl {
     font-size: 65px;
 }
 
+@media screen and (max-width:767px) {
+    #sponsorSection h3 span{
+        font-weight: 600;
+        font-size: 60px;
+    }
+}
