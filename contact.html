@@ -106,7 +106,7 @@
                   </a>
                   <ul class="dropdown-menu" id="dd-info" aria-labelledby="navbarDropdownMenuLink">
                     <li><a class="dropdown-item" href="./aboutshenzhen.html">About Shenzhen</a></li>
-                    <li><a class="dropdown-item" href="./article.html">Article</a></li>
+                    <li><a class="dropdown-item" href="https://blog.ppitshenzhen.org/">Article</a></li>
                     <li><a class="dropdown-item" href="./FAQ.html">FAQs</a></li>
                   </ul>
                 </li>
@@ -119,8 +119,8 @@
               </ul>
             </div>
           </div> 
-      </div>
-  </nav>
+        </div>
+    </nav>
 
   <div class="container-xxl">
     <section id="contact-info">
@@ -193,7 +193,7 @@
           <ul class="nav flex-column footer-more-info">
             <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-muted">About PPIT Shenzhen</a></li>
             <li class="nav-item mb-2"><a href="./aboutshenzhen.html" class="nav-link p-0 text-muted">About Shenzhen</a></li>
-            <li class="nav-item mb-2"><a href="./article.html" class="nav-link p-0 text-muted">Articles</a></li>
+            <li class="nav-item mb-2"><a href="https://blog.ppitshenzhen.org" class="nav-link p-0 text-muted">Articles</a></li>
             <li class="nav-item mb-2"><a href="./FAQ.html" class="nav-link p-0 text-muted">FAQs</a></li>
           </ul>
         </div>
@@ -218,13 +218,13 @@
         <div class="col col-8 col-md-2 pt-3 pb-3 order-5 order-md-5">
           <h5>Contact Us</h5>
           <ul class="nav flex-column contact-us-ul">
-            <a href="" target="_blank" class="whatsapp">
+            <a href="#setContactWA" class="whatsapp">
               <li class="nav-item mb-2 contact-banner li-whatsapp">
-                <i class="icofont-whatsapp"></i>
+                <i class="icofont-wechat"></i>
                 <h2 id="setContactWA"></h2>
               </li>
             </a>
-            <a href="" target="_blank" class="email">
+            <a href="mailto:ppitshenzhen@gmail.com" target="_blank" class="email">
               <li class="nav-item mb-2 contact-banner li-email">
                 <i class="icofont-envelope"></i>
                 <h2 id="setContactEmail"></h2>
@@ -249,7 +249,7 @@
       window.onresize = setCopyright;
 
       function setContact() {
-        (window.innerWidth >= 1280) ? document.querySelector("#setContactWA").innerHTML = `+62 888 8888 8888` : document.querySelector("#setContactWA").innerHTML = `WhatsApp`;
+        (window.innerWidth >= 1280) ? document.querySelector("#setContactWA").innerHTML = `ID : PPITshenzhen` : document.querySelector("#setContactWA").innerHTML = `WeChat`;
         (window.innerWidth >= 1280) ? document.querySelector("#setContactEmail").innerHTML = `info@ppitshenzhen.com` : document.querySelector("#setContactEmail").innerHTML = `Email`;
       }
       setContact();
@@ -257,7 +257,7 @@
     </script>
 
   </footer>
-
+  
   <!-- =========== VENDOR CSS ========== -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
           integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" 
