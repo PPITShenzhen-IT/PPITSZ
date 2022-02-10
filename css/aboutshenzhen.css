@@ -97,8 +97,17 @@ div.container-xxl {
     flex-direction: column;
     justify-content: space-between;
 }
-.row{
+
+.cuhk{
     margin-top: 6vh;
+}
+
+.sustech{
+    margin-top: 13vh;
+}
+
+.SZU{
+    margin-top: 13vh;
 }
 
 .container{
@@ -107,21 +116,20 @@ div.container-xxl {
 }
 
 .container h3{
-    margin-top: 3vh;
-    margin-left: 2vh;
+    margin-left: 20px;
     font-weight: 700;
     font-size: 26px;
 }
 
 .container h5{
-    margin: 2vh;
+    margin-left: 20px;
     font-size: 20px;
     font-weight: 500;
 }
 
 .container p{
-    margin: 2vh;
-    margin-top: 1vh;
+    margin-left: 20px;
+    margin-top: 20px;
     line-height: 30px;
 }
 
@@ -129,8 +137,8 @@ div.container-xxl {
     margin-left: 2vh;
     margin-top: 2vh;
     background-color: #d62023;
-    border-radius: 15px;
-    padding: 8px 35px;
+    border-radius: 10px;
+    padding: 6px 35px;
     font-size: 18px;
     font-weight: 300;
     box-shadow: 4px 4px 58px rgba(0,0,0,0.12);
@@ -182,12 +190,14 @@ div.container-xxl {
 
 .entertainment {
     display: flex;
+    flex: 0 0 25em;
     justify-content: center;
     flex-direction: row;
     margin: 0 auto;
 }
 
 #entertainmentPhone {
+    flex: 0 0 314px;
     background-color: white;
     box-shadow: 0px 4px 20px 10px rgba(0,0,0,0.15);
     border-radius: 2em;
@@ -201,7 +211,11 @@ div.container-xxl {
     margin-bottom: 1.6em;
     height: 475px;
     width: 95%;
-    border-radius: 1em 1em 0em 0em;
+    border-radius: 2em;
+}
+
+#reels {
+    border-radius: 1em;
 }
 
 .fas {
