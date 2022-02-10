@@ -172,6 +172,7 @@ div.container-xxl {
         display: none;
     }
     .container h3{
+        margin-top: 20px;
         font-size: 20px;
     }
     .container h5{
