@@ -329,12 +329,10 @@
         <div class="col col-8 col-md-2 pt-3 pb-3 order-5 order-md-5">
           <h5>Contact Us</h5>
           <ul class="nav flex-column contact-us-ul">
-            <a href="#setContactWA" class="whatsapp">
               <li class="nav-item mb-2 contact-banner li-whatsapp">
                 <i class="icofont-wechat"></i>
                 <h2 id="setContactWA"></h2>
               </li>
-            </a>
             <a href="mailto:ppitshenzhen@gmail.com" target="_blank" class="email">
               <li class="nav-item mb-2 contact-banner li-email">
                 <i class="icofont-envelope"></i>
@@ -361,7 +359,7 @@
 
       function setContact() {
         (window.innerWidth >= 1280) ? document.querySelector("#setContactWA").innerHTML = `ID : PPITshenzhen` : document.querySelector("#setContactWA").innerHTML = `WeChat`;
-        (window.innerWidth >= 1280) ? document.querySelector("#setContactEmail").innerHTML = `info@ppitshenzhen.com` : document.querySelector("#setContactEmail").innerHTML = `Email`;
+        (window.innerWidth >= 1280) ? document.querySelector("#setContactEmail").innerHTML = `ppitshenzhen@gmail.com` : document.querySelector("#setContactEmail").innerHTML = `Email`;
       }
       setContact();
       window.onresize = setContact;
