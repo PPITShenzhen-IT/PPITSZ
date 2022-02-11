@@ -116,10 +116,79 @@ html{
 
 .nametag-short .occupation {
     top: 64%;
-    left: 5%;
+    left: 4.5%;
     width: 100%;
     height: 36%;
     padding-top: 2%;
     font-size: 0.85em;
     font-weight: 600;
+}
+
+@media screen and (max-width: 1279px){
+    .selectDivision .d-flex button {
+        width: 45%;
+    }
+
+    #committeeCarousel .carousel-control-prev, #committeeCarousel .carousel-control-next {
+        display: none;
+    }
+
+    .nametag-long .name, .nametag-short .name {
+        font-size: 1.75em;
+    }
+
+    .nametag-long .name {
+        padding-top: 0.75%;
+    }
+
+    .nametag-short .name {
+        padding-top: 2.75%;
+    }
+    
+    .nametag-long .occupation, .nametag-short .occupation {
+        font-size: 0.9em;
+    }
+
+    .nametag-long .occupation {
+        padding-top: 1%;
+    }
+
+    .nametag-short .occupation {
+        padding-top: 2%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .selectDivision .d-flex button {
+        width: 80vw;
+    }
+
+    #committeeCarousel .carousel-control-prev, #committeeCarousel .carousel-control-next {
+        display: none;
+    }
+
+    .nametag-long .name, .nametag-short .name {
+        font-size: 1.35em;
+    }
+
+    .nametag-long .name {
+        padding-top: 2.3%;
+    }
+
+    .nametag-short .name {
+        padding-top: 3.8%;
+    }
+    
+    .nametag-long .occupation, .nametag-short .occupation {
+        padding-top: 1.0%;
+        font-size: 0.9em;
+    }
+
+    .nametag-long .occupation {
+        padding-top: 1%;
+    }
+
+    .nametag-short .occupation {
+        padding-top: 2.2%;
+    }
 }

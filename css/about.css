@@ -54,8 +54,9 @@
   .prof-desc-mobile {
     display: block;
   }
-
+  
   .prof-desc-mobile p {
+    font-size: 0.9em;
     padding: 2em 1.5em;
   }
 
@@ -78,8 +79,8 @@
     color: white;
     font-size: 1.2em;
     position: relative;
-    margin-top: -140px;
-    min-height: 40.45vw;
+    margin-top: -250px;
+    min-height: 600px;
     background: url(../Assets/about/prof-right-ban-r.svg) no-repeat;
     background-size: cover;
     text-align: end;
