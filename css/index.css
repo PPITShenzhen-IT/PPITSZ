@@ -383,9 +383,10 @@ div.container-xxl {
     position: relative;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1400px) {
     .carousel-control-next{
         right: -8em;
+        margin: auto;
     }
 
     .carousel-control-prev{
