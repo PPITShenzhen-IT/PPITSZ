@@ -491,13 +491,11 @@ div.container-xxl {
     font-size: 65px;
 }
 
-
 @media screen and (min-width:1025px){
     #huaweiDesktop{
         margin-left: 60px ;
     }
 }
-
 
 @media screen and (max-width:767px) {
     #sponsorSection h3 span{
