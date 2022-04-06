@@ -260,6 +260,7 @@ h3 {
 /* Sambutan */
 #sambutan {
   padding: 20px;
+  margin: 20px;
   background-color: #323232;
   border-radius: 20px;
   color: white;
