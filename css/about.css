@@ -54,7 +54,7 @@
   .prof-desc-mobile {
     display: block;
   }
-  
+
   .prof-desc-mobile p {
     font-size: 0.9em;
     padding: 2em 1.5em;
@@ -67,6 +67,7 @@
     background-position: center bottom;
     background-size: cover;
   }
+
   .upper-spacer {
     height: 10em;
   }
@@ -92,7 +93,7 @@
   }
 
   .lower-spacer {
-    height: min( 110vw, 380px );
+    height: min(110vw, 380px);
   }
 }
 
@@ -256,6 +257,33 @@ h3 {
   color: #353535;
 }
 
+/* Sambutan */
+#sambutan {
+  padding: 20px;
+  background-color: #323232;
+  border-radius: 20px;
+  color: white;
+}
+
+#sambutan div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sambutan h3 {
+  text-align: center;
+}
+
+#sambutan img {
+  max-width: 90%;
+  margin: 20px;
+}
+
+#sambutan p {
+  margin: 50px;
+}
+
 @media screen and (max-width: 784px) {
 
   .carousel-container {
@@ -307,4 +335,3 @@ h3 {
     text-align: center;
   }
 }
-
