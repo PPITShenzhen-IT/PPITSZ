@@ -35,6 +35,7 @@ html {
   background-color: #fff3d9;
   animation: dd-slide-abin 0.5s ease;
   overflow: hidden;
+  box-shadow: 0px 16px 20px rgba(112, 144, 176, 0.2);
 }
 
 #dd-info.show {
@@ -42,6 +43,7 @@ html {
   background-color: #fff3d9;
   animation: dd-slide-info 0.5s ease;
   overflow: hidden;
+  box-shadow: 0px 16px 20px rgba(112, 144, 176, 0.2);
 }
 
 nav .collapse:not(.show) {
