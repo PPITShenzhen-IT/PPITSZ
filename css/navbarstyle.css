@@ -46,6 +46,12 @@ html {
   box-shadow: 0px 16px 20px rgba(112, 144, 176, 0.2);
 }
 
+@media screen and (max-width:767px){
+  #dd-about.show, #dd-info.show{
+    box-shadow: none;
+  }
+}
+
 nav .collapse:not(.show) {
   display: inherit;
 }
