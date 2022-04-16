@@ -108,6 +108,12 @@ p#role {
     }
 }
 
+@media screen and (min-width:2500px) {
+    p#greeting {
+        margin-bottom: 3.5em;
+    }
+}
+
 /* About CSS */
 
 #about-me {
