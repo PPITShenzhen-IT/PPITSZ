@@ -1,0 +1,451 @@
+/* Global CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar CSS */
+
+#nav-whitebar {
+    background-color: white;
+    box-shadow: 0px -10px 30px 0px #888;
+}
+
+.nav-link {
+    color: black !important;
+    font-weight: 500;
+    padding: 0px !important;
+}
+
+#logo img {
+    height: 40px;
+}
+
+.navbar-toggler {
+    border: 1px solid #aaa !important;
+}
+
+@media screen and (max-width: 767px) {
+    #navbarNav {
+        margin-top: 1em;
+    }
+
+    .nav-link {
+        margin: 0.5em 0em;
+    }
+}
+
+/* Landing CSS */
+
+#landing-gradient {
+    background-image: linear-gradient(165deg, #ddd, white, white);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#landing-col-info {
+    line-height: 1px;
+}
+
+p#greeting {
+    font-size: 1.5em;
+    margin-bottom: 2.4em;
+}
+
+p#introduction {
+    font-size: 4.8vw;
+    /* font-size: 4.8em; */
+    font-weight: 600;
+    margin-bottom: 1em;
+    margin-left: -4px;
+}
+
+p#role {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+#hire-btn {
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 0.75em 3em;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+#hire-btn:hover {
+    background-color: #ccc;
+}
+
+@media screen and (max-width:767px) {
+    p#greeting {
+        font-size: 1.5em;
+        margin-top: 3em;
+        margin-bottom: 1.8em;
+    }
+
+    p#introduction {
+        font-size: 3em;
+        margin-left: -1px;
+        margin-bottom: 0.85em;
+    }
+
+    p#role {
+        line-height: 1.2em;
+        font-size: 1.2em;
+        margin-bottom: 1.5em;
+        max-width: 60%;
+    }
+
+    #hire-btn {
+        margin-bottom: 1.4em;
+    }
+}
+
+/* About CSS */
+
+#about-me {
+    box-shadow: 0px 20px 50px 0px #ccc;
+    background: white;
+    border-radius: 1em !important;
+    padding: 8em 3em;
+    margin-bottom: 6em;
+}
+
+#about-col-picture {
+    padding: 0em 3em;
+    position: relative;
+}
+
+#about-portrait {
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+    z-index: 10;
+    margin-bottom: 5em;
+
+}
+
+#about-shadow-border {
+    width: 250px;
+    height: 350px;
+    border: 15px solid black;
+    position: absolute;
+    bottom: 0px;
+}
+
+#about-heading {
+    font-size: 1.8em;
+    font-weight: 600;
+    line-height: 0.3em;
+}
+
+#selling-point {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 1.2em;
+}
+
+#personal-introduction {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 3em;
+}
+
+#resume-btn {
+    font-size: 1.1em;
+    font-weight: 300;
+    padding: 0.75em 2em;
+    border-radius: 8px;
+}
+
+#resume-btn:hover {
+    background-color: black;
+}
+
+@media screen and (max-width:767px) {
+    #about-me {
+        padding: 4em 3em 5em 3em;
+        margin-bottom: 3em;
+    }
+
+    #about-col-picture {
+        padding: 0px;
+    }
+
+    #about-portrait {
+        right: 0em;
+        z-index: 10;
+        margin-bottom: 3em;
+    }
+
+    #about-shadow-border {
+        width: 250px;
+        height: 350px;
+        border: 15px solid black;
+        position: absolute;
+        bottom: 0px;
+    }
+
+    #about-heading {
+        margin-bottom: 0.6em;
+    }
+
+    #selling-point {
+        line-height: 1.2em;
+    }
+}
+
+/* Qualifications CSS */
+#qualifications {
+    font-size: 1.1em;
+}
+
+#qualifications-heading {
+    margin-right: 3em;
+}
+
+#qualifications-heading h2 {
+    font-size: 1.8em;
+}
+
+#qualifications h3 {
+    font-size: 1.2em;
+}
+
+.qual-card1,
+.qual-card2 {
+    border-radius: 1em;
+    box-shadow: 0px 5px 40px 5px #bbb;
+}
+
+.qual .qual-card1 h2,
+.qual .qual-card2 h2 {
+    margin-top: 20px;
+}
+
+.experience {
+    padding: 1.6em 2em 2em 2em;
+    margin: 20px;
+    border-radius: 1em;
+    background-color: #ddd;
+}
+
+@media screen and (max-width:767px) {
+    #qualifications-heading {
+        margin-right: 0em;
+    }
+
+    #qualifications {
+        max-width: 92%;
+        margin: auto;
+    }
+
+    .qual-card1 {
+        padding: 3em 0em;
+        z-index: 2;
+    }
+
+    .qual-card2 {
+        margin-top: 1.5em;
+    }
+
+    p {
+        margin-bottom: 0.3em;
+    }
+
+    .experience {
+        padding: 1.6em 2em;
+        margin: 1em 0em;
+    }
+}
+
+/* Projects CSS */
+
+#projects-graybar {
+    margin-top: 6em;
+    background-color: #ddd;
+}
+
+#sample-projects {
+    position: relative;
+    padding: 5em 0em;
+}
+
+#projects-heading {
+    font-size: 2.4em;
+    font-weight: 300;
+}
+
+.carousel {
+    position: initial;
+}
+
+.carousel-inner {
+    min-height: 300px;
+}
+
+.project-img {
+    width: 60%;
+    position: relative;
+    left: 4em;
+    margin-bottom: 3em;
+    z-index: 10;
+    border-radius: 0.5em;
+}
+
+.project-gray-shadowbox {
+    width: 30%;
+    height: calc(100% - 3em);
+    background-color: #aaa;
+    position: absolute;
+    top: 3em;
+    border-radius: 0.5em;
+}
+
+.project-title {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0.4em;
+    line-height: 1em;
+}
+
+.project-description {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: relative;
+    display: inline;
+    opacity: 1;
+    color: #555;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    border-radius: 100%;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: black;
+}
+
+.carousel-control-prev {
+    width: 0px !important;
+    margin-right: 1em;
+}
+
+.carousel-indicators {
+    margin: 0px !important;
+    position: relative;
+    margin: 1em;
+    bottom: 0px;
+}
+
+.carousel-indicators li {
+    width: 50px !important;
+    height: 5px !important;
+    background-color: black !important;
+}
+
+.carousel-indicators li:nth-child(2) {
+    margin: 0px 0.5em !important;
+}
+
+@media screen and (max-width:767px) {
+    #projects-graybar {
+        margin-top: 3em;
+    }
+
+    #sample-projects {
+        padding: 3em 1em 4em 1em;
+    }
+
+    .project-gray-shadowbox {
+        display: none;
+    }
+
+    .project-img {
+        width: 100%;
+        margin-bottom: 1.5em;
+        left: 0;
+    }
+
+    .carousel-inner {
+        min-height: 500px;
+    }
+}
+
+/* Contact CSS */
+
+#contact {
+    padding: 4em 0em 5em 0em;
+}
+
+#contact p {
+    font-size: 1.2em;
+}
+
+#socials {
+    max-width: 600px;
+}
+
+#socials .card {
+    padding: 20px;
+    margin-bottom: 10px;
+    transition: filter 0.2s ease;
+    border: 1px solid #aaa;
+}
+
+#socials .card:hover {
+    filter: brightness(80%)
+}
+
+#contact a {
+    text-decoration: none !important;
+    color: black;
+}
+
+#socials img {
+    width: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    #contact {
+        padding: 4em 0em 3em 0em;
+    }
+
+    #contact-prompt {
+        max-width: 70%;
+        margin: auto;
+    }
+
+    #contact-invitation {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    #socials {
+        max-width: 90vw;
+    }
+}
+
+/* Footer CSS */
+
+footer {
+    padding: 30px;
+    background-color: #333;
+    color: #888;
+}
+
+footer p {
+    margin: 0px;
+}
