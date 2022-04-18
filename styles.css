@@ -360,10 +360,11 @@ p#role {
     width: 50px !important;
     height: 5px !important;
     background-color: black !important;
+    margin: 0px 0px !important;
 }
 
 .carousel-indicators li:nth-child(2) {
-    margin: 0px 0.5em !important;
+    margin: 0px 0.8em !important;
 }
 
 @media screen and (max-width:767px) {
@@ -383,6 +384,10 @@ p#role {
         width: 100%;
         margin-bottom: 1.5em;
         left: 0;
+    }
+
+    .project-description {
+        margin-bottom: 1em;
     }
 
     .carousel-inner {
