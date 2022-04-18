@@ -21,6 +21,10 @@ body {
     padding: 0px !important;
 }
 
+.nav-link:hover {
+    color: #555 !important;
+}
+
 #logo img {
     height: 40px;
 }
