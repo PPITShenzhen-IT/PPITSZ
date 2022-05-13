@@ -220,7 +220,7 @@
                         </p>
                         <p class="mb-2">
                             <strong>Pastikan</strong> untuk menuliskan informasi dengan 
-                            format "WebDev - [Nama Lengkap Peserta]" di berita transfer.
+                            format "WebDev - [Nama Lengkap]" di berita transfer.
                         </p>
                         <p class="mb-4">
                             <strong>Pastikan</strong> untuk melakukan screenshot bukti transfer.
@@ -228,28 +228,43 @@
                             dapat menunjukkan bukti transfer tersebut ke panitia.
                         </p>
 
-                        <table>
+                        <table class="d-none d-md-block"> <!-- Desktop Payment Info  -->
                             <tr>
-                                <td class="pb-2 pb-md-0 pe-2 pe-md-3">Bank</td>
+                                <td class="pb-2 pb-md-0 pe-2 pe-md-3"><strong>Bank</strong></td>
                                 <td class="pe-1 pe-md-2">:</td>
                                 <td class="pb-2 pb-md-0">Bank Central Asia (BCA)</td>
                             </tr>
                             <tr>
-                                <td class="pb-2 pb-md-0 pe-2 pe-md-3">Nomor Rekening</td>
+                                <td class="pb-2 pb-md-0 pe-2 pe-md-3"><strong>Nomor Rekening</strong></td>
                                 <td class="pe-1 pe-md-2">:</td>
                                 <td class="pb-2 pb-md-0">6500195647</td>
                             </tr>
                             <tr>
-                                <td class="pb-2 pb-md-0 pe-2 pe-md-3">Nominal Transfer</td>
+                                <td class="pb-2 pb-md-0 pe-2 pe-md-3"><strong>Nominal Transfer</strong></td>
                                 <td class="pe-1 pe-md-2">:</td>
                                 <td class="pb-2 pb-md-0">Rp 25.000</td>
                             </tr>
                             <tr>
-                                <td class="pb-2 pb-md-0 pe-2 pe-md-3">Berita</td>
+                                <td class="pb-2 pb-md-0 pe-2 pe-md-3"><strong>Berita</strong></td>
                                 <td class="pe-1 pe-md-2">:</td>
-                                <td class="pb-2 pb-md-0">"WebDev - [Nama Lengkap Peserta]"</td>
+                                <td class="pb-2 pb-md-0">"WebDev - [Nama Lengkap]"</td>
                             </tr>
                         </table>
+
+                        <section class="d-block d-md-none"> <!-- Mobile Payment Info  -->
+                            <p class="mb-0"><strong>Bank</strong>:</p>
+                            <p class="mb-1">Bank Central Asia (BCA)</p>
+
+                            <p class="mb-0"><strong>Nomor Rekening</strong>:</p>
+                            <p class="mb-1">6500195647</p>
+
+                            <p class="mb-0"><strong>Nominal Transfer</strong>:</p>
+                            <p class="mb-1">Rp 25.000</p>
+
+                            <p class="mb-0"><strong>Berita</strong>:</p>
+                            <p class="mb-1">"WebDev - [Nama Lengkap]"</p>
+                        </section>
+
                         <img class="mt-4 mt-md-5 img-fluid transferQR" src="/Assets/workshop/qr_zuli_opt.jpg" alt="Nomor Rekening Pendaftaran Workshop">
                     </div>
                 </div>
