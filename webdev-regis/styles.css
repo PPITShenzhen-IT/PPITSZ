@@ -26,6 +26,14 @@ html {
     padding-top: 1em;
 }
 
+.detail-table td {
+    padding: 0.2em 0px;
+}
+
+.detail-icon-col {
+    padding-right: 0.75em !important;
+}
+
 h5 {
     font-size: 1.6em;
 }
@@ -132,6 +140,11 @@ table td {
 
     .form-title span {
         font-size: 1.7em;
+    }
+
+    .detail-table td {
+        padding: 0.2em 0px;
+        line-height: 1.5em;
     }
 
     .highlight span:after {
