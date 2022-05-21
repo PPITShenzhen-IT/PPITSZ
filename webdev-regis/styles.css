@@ -1,0 +1,161 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.form-title {
+    color: #2c2c2c;
+}
+
+.form-title span {
+    font-weight: 600;
+    font-size: 65px;
+}
+
+.form-text {
+    color: #2c2c2c;
+    max-width: 75%;
+    margin: auto;
+    padding-top: 1em;
+}
+
+.detail-table td {
+    padding: 0.2em 0px;
+}
+
+.detail-icon-col {
+    padding-right: 0.75em !important;
+}
+
+h5 {
+    font-size: 1.6em;
+}
+
+#form-description ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.highlight span {
+    position: relative;
+    z-index: 3;
+}
+
+.highlight span:after {
+    border-radius: 0.5em;
+    background-color: #fff3d9;
+    content: "";
+    height: 30%;
+    position: absolute;
+    left: 0px;
+    margin-left: -0.2em;
+    top: 60%;
+    width: calc(100% + 0.4em);
+    z-index: -1;
+}
+
+/* ======= Form Box ======== */
+
+#form-box .inbox-form {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: 30px;
+    background: #fff3d9;
+    border-radius: 10px;
+    box-shadow: 0px 7px 20px 3px rgba(0, 0, 0, 0.25);
+}
+
+#validatedSend {
+    padding: 0.6em 1.2em;
+    margin-bottom: 0.5em;
+    color: white;
+    background-color: #eb1b24;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+#validatedSend:hover {
+    background-color: #be1018;
+}
+
+#form-box .inbox-form .form-group {
+    padding-bottom: 1em;
+}
+
+#form-box .inbox-form input,
+#form-box .inbox-form textarea {
+    border-radius: 4;
+    box-shadow: none;
+    font-size: 18px;
+}
+
+#form-box .inbox-form input {
+    height: 3em;
+}
+
+#form-box .inbox-form button[type="submit"] {
+    margin-top: 17px;
+    background: rgb(16, 16, 48);
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+#form-box .inbox-form button[type="submit"]:hover {
+    background: #EC2429;
+}
+
+table td {
+    vertical-align: top;
+}
+
+.transferQR {
+    width: 75%;
+}
+
+@media screen and (max-width:767px) {
+    #mainNavbarContainer {
+        padding: 0.5em;
+    }
+
+    .menu-btn {
+        transform: translateX(-25%) translateY(250%);
+        top:30px;
+        right: 30px;
+    }
+
+    .menu-btn-burger {
+        transform: scale(1.5);
+    }
+
+    .form-title span {
+        font-size: 1.7em;
+    }
+
+    .detail-table td {
+        padding: 0.2em 0px;
+        line-height: 1.5em;
+    }
+
+    .highlight span:after {
+        display: none;
+    }
+
+    .transferQR {
+        width: 100%;
+    }
+
+    #validatedSend {
+        font-size: 1em;
+    }
+}
