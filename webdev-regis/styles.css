@@ -72,6 +72,35 @@ h5 {
     box-shadow: 0px 7px 20px 3px rgba(0, 0, 0, 0.25);
 }
 
+#form-box {
+    position: relative;
+    z-index: 10;
+}
+
+#gray {
+    position: absolute;
+    top: 3em;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: calc(100% - 6.0em);
+    border-radius: 10px;
+}
+
+#closedMsg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 150;
+    color: white;
+    font-size: 1.5em;
+    width: 75%;
+    margin: auto;
+    transform: translateX(-50%) translateY(-50%);
+    text-rendering: optimizeLegibility;
+    text-align: center;
+}
+
 #validatedSend {
     padding: 0.6em 1.2em;
     margin-bottom: 0.5em;
