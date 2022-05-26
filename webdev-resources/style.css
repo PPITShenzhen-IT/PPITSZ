@@ -1,0 +1,63 @@
+#form-box {
+    width: max-content;
+    background-color: #fff3d9;
+    border: 1px solid black;
+    padding: 2em 3em;
+}
+
+#inp-pw {
+    width: 100%;
+}
+
+#login-btn {
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    padding: 0.4em 2em;
+}
+
+.module {
+    background-color: #fff3d9;
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0px 4px 16px 0px #888;
+}
+
+.module H3 {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.module label {
+    padding: 0px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.module textarea {
+    padding: 0.4em 0.75em;
+    font-family: 'Consolas';
+    font-size: 1.2em;
+    color: white;
+    background-color: #333;
+    border-radius: 0.5em;
+}
+
+.module .copyBtn {
+    max-width: max-content;
+    border-radius: 0.5em;
+    font-size: 1.2em;
+    padding: 0.5em 1.5em;
+    background-color: #333;
+    color: white;
+}
+
+.module .copyBtn:hover {
+    background-color: black;
+}
+
+.bi {
+    font-size: 2.2em;
+    margin-top: 2px;
+    color: #1a8e0d;
+}
