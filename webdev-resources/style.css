@@ -16,6 +16,11 @@
     padding: 0.4em 2em;
 }
 
+.importantLink {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
 .module {
     background-color: #fff3d9;
     padding: 2em;
