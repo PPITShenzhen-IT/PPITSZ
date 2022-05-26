@@ -61,3 +61,10 @@
     margin-top: 2px;
     color: #1a8e0d;
 }
+
+@media screen and (max-width: 767px) {
+    #form-box {
+        max-width: 90%;
+        margin: 2em auto !important;
+    }
+}
