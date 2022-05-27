@@ -4,9 +4,9 @@ let i_nameRef = document.querySelector("#inp-name")
 let i_emailRef = document.querySelector("#inp-email")
 let i_numRef = document.querySelector("#inp-number")
 let msgRef = document.querySelector("#submitMsg")
-let canSubmit = true;
+let canSubmit = false;
 
-btnRef.addEventListener("click", validateSend);
+// btnRef.addEventListener("click", validateSend);
 
 function dl_win() {
     window.open("https://ninite.com/chrome-vscode/ninite.exe", '_blank').focus();
@@ -21,6 +21,7 @@ function dl_macChrome() {
 };
 
 function validateSend(submitEvent) {
+    return
     msgRef.innerHTML = "";
     submitEvent.preventDefault();
     i_nameRef.value = i_nameRef.value.trim();
