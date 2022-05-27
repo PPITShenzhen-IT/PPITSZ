@@ -86,7 +86,7 @@
         </div>
     </nav>
 
-    <div class="container-xxl d-none" style="padding: 1em 2em" id="resourcesContainer">
+    <div class="container-xxl" style="padding: 1em 2em" id="resourcesContainer">
         <div class="row module mx-0 mt-3 mb-5" id="module_Links">
             <h3 class="px-0 mb-4">Links</h3>
             <a class="px-0 importantLink" href="https://www.vecteezy.com/">Cari Logo Pribadi</a>
@@ -152,14 +152,13 @@ body {
         <a class="navbar-brand" href="#" id="logo">
             <img src="{PATH KE LOGO WEBSITE}" class="px-3 px-md-5" alt="{NAMA PEMILIK CV}">
         </a>
-        <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item px-3">
-                    <a class="nav-link active" aria-current="page" href="#about-me">Profile</a>
+                    <a class="nav-link active" href="#about-me">Profile</a>
                 </li>
                 <li class="nav-item px-3">
                     <a class="nav-link" href="#qualifications">Qualifications</a>
@@ -168,7 +167,7 @@ body {
                     <a class="nav-link" href="#projects-graybar">Projects</a>
                 </li>
                 <li class="nav-item ps-3 pe-5">
-                    <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -227,12 +226,12 @@ body {
 <textarea class="area_HTML mb-3" rows="10" readonly>
 <div class="container-xxl" id="landing">
     <div class="row">
-        <div class="col col-md-7 col-12 my-auto px-0 ps-3 ps-md-5" id="landing-col-info">
+        <div class="col col-md-7 col-12 my-auto px-1 ps-3 ps-md-5" id="landing-col-info">
             <p id="greeting">Hello,</p>
             <p id="introduction">{NAMA PEMILIK CV}</p>
             <p id="role">{STATUS ATAU JABATAN}</p>
             <a href="#contact">
-                    <button type="button" class="btn btn-outline-primary" id="hire-btn">Hire Me</button>
+                <button type="button" class="btn btn-outline-primary" id="hire-btn">Hire Me</button>
             </a>
         </div>
         <div class="col col-md-5 col-12 text-end px-0 mt-auto" id="landing-col-picture">
@@ -256,24 +255,24 @@ body {
 }
     
 #landing-col-info {
-    line-height: 1px;
+    line-height: 4em;
 }
     
 p#greeting {
     font-size: 1.5em;
-    margin-bottom: 2.4em;
+    line-height: 1.5em;
 }
     
 p#introduction {
-    font-size: 4.8vw;
+    font-size: 4.5em;
     font-weight: 600;
-    margin-bottom: 1em;
     margin-left: -4px;
 }
     
 p#role {
     font-size: 1.2em;
-    margin-bottom: 1.5em;
+    line-height: 1.2em;
+    margin-bottom: 1.8em;
 }
     
 #hire-btn {
@@ -292,21 +291,22 @@ p#role {
 @media screen and (max-width:767px) {
     p#greeting {
         font-size: 1.5em;
-        margin-top: 3em;
-        margin-bottom: 1.8em;
+        margin-top: 2em;
+        margin-bottom: -0.1em;
     }
     
     p#introduction {
         font-size: 3em;
         margin-left: -1px;
-        margin-bottom: 0.85em;
+        margin-bottom: 0.3em;
+        line-height: 1em;
     }
     
     p#role {
         line-height: 1.2em;
         font-size: 1.2em;
-        margin-bottom: 1.5em;
-        max-width: 60%;
+        margin-bottom: 1.6em;
+        max-width: 80%;
     }
     
     #hire-btn {
