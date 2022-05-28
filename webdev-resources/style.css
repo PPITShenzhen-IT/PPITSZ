@@ -16,9 +16,27 @@
     padding: 0.4em 2em;
 }
 
+.linkSubsection {
+    font-weight: 600;
+}
+
 .importantLink {
     font-size: 1.2em;
     line-height: 1.5em;
+    text-decoration: none;
+}
+
+.importantLink button {
+    font-size: 1em;
+    padding: 0.6em 1em;
+}
+
+.yt-container {
+    position: relative;
+    width: 0px;
+    height: 0px;
+    padding-bottom: min(56.25%, 315px);
+    padding-right: min(100%, 560px);
 }
 
 .module {
