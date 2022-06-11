@@ -19,9 +19,6 @@ let cb_L1_dataDeliverer = document.querySelector(`[name="entry.1591602500.other_
 let cb_L1_data = document.querySelector("#inp-Lainnya1");
 let r_Msg = document.querySelector("#submitMsg");
 
-// Settings
-let available = true;
-
 // Process Functions
 function validateSend(submitEvent) {
     submitEvent.preventDefault();
@@ -49,8 +46,8 @@ function validateSend(submitEvent) {
         cb_L1_dataDeliverer.disabled = false;
     }
 
-    if (c1 && c2 && c3 && c4 && c5 && available) {
-        fetch("https://api.nitrous.dev/cf2022/send-conf", {
+    if (c1 && c2 && c3 && c4 && c5) {
+        fetch("https://api.nitrous.dev:23450/cf2022/send-conf", {
             method: "POST",
             headers: {'Content-Type': 'application/json'}, 
             body: JSON.stringify({
@@ -58,33 +55,33 @@ function validateSend(submitEvent) {
                 "fname": i_Name.value.split(" ")[0]
             })
           }).then(res => {
-            console.log("Request complete! response:", res);
+            res.json().then((resData) => {
+                if (resData.status == 0) {
+                    r_Msg.innerHTML = `<div style="color: red; font-weight: 700;">
+                    Error! Anda sudah selesai melakukan registrasi dengan email yang diketik.
+                    </div>`;
+                } else if (resData.status == 1) {
+                    r_Form.submit();
+
+                    r_Msg.innerHTML = (
+                        `<div style="color: green; margin-bottom: 0.5em; font-weight: 600;">
+                        Pendaftaran Berhasil!
+                        </div>
+                        <div style="text-align: justify">
+                        Terima kasih sudah melakukan registrasi untuk Career Fair by PPITSZ.
+                        </div>`
+                    );
+                }
+            });
           });
 
-        // r_Form.submit();
-
-        r_Msg.innerHTML = (
-            `<div style="color: green; margin-bottom: 0.5em; font-weight: 600;">
-            Pendaftaran Berhasil!
-            </div>
-            <div style="text-align: justify">
-            Terima kasih sudah melakukan registrasi untuk Career Fair by PPITSZ.
-            </div>`
-        );
-
-        available = false;
     } else {
         if (!c1) e1.innerHTML = `Mohon pastikan bahwa nama lengkap yang telah diketik adalah nama lengkap yang valid.`;
         if (!c2) e2.innerHTML = `Mohon pastikan bahwa email yang telah diketik adalah alamat email yang valid.`;
         if (!c3) e3.innerHTML = `Mohon pastikan bahwa nomor telepon yang telah diketik adalah nomor telepon yang valid.`;
         if (!c4) e4.innerHTML = `Mohon pastikan bahwa institusi pendidikan yang telah diketik adalah nama institusi pendidikan yang valid.`;
         if (!c5) e5.innerHTML = `Mohon pastikan bahwa minimal satu sumber pengetahuan acara telah dipilih.`;
-        if (!available) {
-            r_Msg.innerHTML = `<div style="color: red; font-weight: 700;">
-            Error! Anda sudah selesai melakukan registrasi!
-            </div>`;
-        }
-        
-        if (!(c1 && c2 && c3 && c4 && c5)) r_Form.scrollIntoView();
+
+        r_Form.scrollIntoView();
     }
 }
