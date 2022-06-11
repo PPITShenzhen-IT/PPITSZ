@@ -6,7 +6,7 @@ let i_numRef = document.querySelector("#inp-number")
 let msgRef = document.querySelector("#submitMsg")
 let canSubmit = false;
 
-// btnRef.addEventListener("click", validateSend);
+btnRef.addEventListener("click", validateSend);
 
 function dl_win() {
     window.open("https://ninite.com/chrome-vscode/ninite.exe", '_blank').focus();
