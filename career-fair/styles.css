@@ -288,6 +288,12 @@ table td {
 
 /* Custom CSS Return */
 
+@media screen and (max-width:1024px) {
+    .highlight span:after {
+        display: none;
+    }
+}
+
 @media screen and (max-width:767px) {
     #mainNavbarContainer {
         padding: 0.5em;
@@ -310,10 +316,6 @@ table td {
     .detail-table td {
         padding: 0.2em 0px;
         line-height: 1.5em;
-    }
-
-    .highlight span:after {
-        display: none;
     }
 
     .transferQR {
