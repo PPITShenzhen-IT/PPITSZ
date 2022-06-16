@@ -218,6 +218,18 @@ div.container-xxl {
 
 /* =========== Activities =========== */
 
+#activitiesCTA {
+    color: white; 
+    background-color: #e92629; 
+    padding: 0.6em 1.5em; 
+    width: max-content;
+    transition: all 0.15s ease;
+}
+
+#activitiesCTA:hover {
+    filter: brightness(1.2);
+}
+
 #activities{
     margin-top: 7em;
     position: relative;
