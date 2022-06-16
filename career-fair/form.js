@@ -18,11 +18,13 @@ let cb_L1_dataTrigger = cb_Referral.item(2);
 let cb_L1_dataDeliverer = document.querySelector(`[name="entry.1591602500.other_option_response"]`);
 let cb_L1_data = document.querySelector("#inp-Lainnya1");
 let r_Msg = document.querySelector("#submitMsg");
+let r_MsgBox = document.querySelector("#msg-box");
 
 // Process Functions
 function validateSend(submitEvent) {
     submitEvent.preventDefault();
 
+    r_MsgBox.style.display = "none";
     r_Msg.innerHTML = "";
     e1.innerHTML, e2.innerHTML, e3.innerHTML, e4.innerHTML, e5.innerHTML = "", "", "", "", "";
 
@@ -57,18 +59,29 @@ function validateSend(submitEvent) {
           }).then(res => {
             res.json().then((resData) => {
                 if (resData.status == 0) {
-                    r_Msg.innerHTML = `<div style="color: red; font-weight: 700;">
-                    Error! Anda sudah selesai melakukan registrasi dengan email yang diketik.
+                    r_MsgBox.style.display = "block";
+                    r_Msg.innerHTML = 
+                    `<div style="color: red; margin-bottom: 0.5em; font-weight: 600; font-size: 1.35em;">
+                        Pendaftaran Gagal! 
+                    </div>
+                    <div style="text-align: justify">
+                        <p class="px-0">Anda sudah selesai melakukan registrasi dengan email yang diketik.</p>
                     </div>`;
                 } else if (resData.status == 1) {
                     r_Form.submit();
-
+                    
+                    r_MsgBox.style.display = "block";
                     r_Msg.innerHTML = (
-                        `<div style="color: green; margin-bottom: 0.5em; font-weight: 600;">
+                        `<div style="color: green; margin-bottom: 0.5em; font-weight: 600; font-size: 1.35em;">
                         Pendaftaran Berhasil!
                         </div>
                         <div style="text-align: justify">
-                        Terima kasih sudah melakukan registrasi untuk Career Fair by PPITSZ. Mohon untuk memerika email Anda secara berkala untuk pengumuman-pengumuman terbaru!
+                            <p class="px-0">Terima kasih sudah melakukan registrasi untuk Career Fair by PPITSZ. Mohon untuk memerika email Anda secara berkala untuk pengumuman-pengumuman terbaru!</p>
+                            
+                            <img src="https://ppitshenzhen.org/career-fair/assets/whatsapp.png" alt="WhatsApp Logo" width="180px" style="margin-left:1px" tabindex="0" class="mb-2">
+                            <p class="px-0 mb-2">Jangan lupa juga untuk bergabung ke group WhatsApp Career Fair agar tidak terlewat pengumuman-pengumuman penting seputar acara ya!</p>
+                            <p class="px-0 mb-2" style="font-weight: 700">QR Code Group</p>
+                            <img src="https://ppitshenzhen.org/career-fair/assets/whatsapp-qr.png" alt="WhatsApp Logo" width="250px" style="margin-left:1px" tabindex="0" class="mb-2">
                         </div>`
                     );
                 }
@@ -83,5 +96,5 @@ function validateSend(submitEvent) {
         if (!c5) e5.innerHTML = `Mohon pastikan bahwa minimal satu sumber pengetahuan acara telah dipilih.`;
 
         r_Form.scrollIntoView();
-    }
-}
+    };
+};

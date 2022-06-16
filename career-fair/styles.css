@@ -64,13 +64,15 @@ h5 {
 
 /* ======= Form Box ======== */
 
-#form-box .inbox-form {
-    margin-top: 3em;
-    margin-bottom: 3em;
+#form-box .inbox-form, #msg-box {
     padding: 30px;
     background: #fff3d9;
     border-radius: 10px;
     box-shadow: 0px 7px 20px 3px rgba(0, 0, 0, 0.25);
+}
+
+#msg-box {
+    margin-bottom: 4em;
 }
 
 #form-box {
