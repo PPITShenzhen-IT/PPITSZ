@@ -68,7 +68,7 @@ function validateSend(submitEvent) {
                         Pendaftaran Berhasil!
                         </div>
                         <div style="text-align: justify">
-                        Terima kasih sudah melakukan registrasi untuk Career Fair by PPITSZ.
+                        Terima kasih sudah melakukan registrasi untuk Career Fair by PPITSZ. Mohon untuk memerika email Anda secara berkala untuk pengumuman-pengumuman terbaru!
                         </div>`
                     );
                 }
