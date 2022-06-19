@@ -257,7 +257,6 @@ div.container-xxl {
 
 #activitiesText {
     padding-bottom: 10px;
-    max-width: 85%;
 }
 
 #activitiesInfoCol {
@@ -267,7 +266,6 @@ div.container-xxl {
 
 #activitiesPhone {
     flex: 0 0 320px;
-
     background-color: white;
     box-shadow: 0px 4px 20px 10px rgba(0,0,0,0.15);
     border-radius: 2em;
@@ -287,7 +285,6 @@ div.container-xxl {
 #activitiesPhone img {
     border-radius: 2em;
     margin-bottom: 1em;
-    width: 278px;
 }
 
 .fas {
@@ -329,7 +326,6 @@ div.container-xxl {
 
     #activitiesInfoCol {
         order: 1;
-        margin-top: 3vh;
     }
     #activitiesPhone {
         order: 2;
