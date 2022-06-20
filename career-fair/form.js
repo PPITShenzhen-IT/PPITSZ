@@ -39,7 +39,7 @@ function validateSend(submitEvent) {
     c1 = (/^[A-Za-z ]+$/.test(i_Name.value));
     c2 = (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(i_Email.value));
     c3 = (/^(\+)?([ 0-9]){6,20}$/.test(i_WA.value));
-    c4 = (/^[()-\w\s]+$/.test(i_Edu.value));
+    c4 = (/^[,()-\w\s]+$/.test(i_Edu.value));
     c5 = (cb_Referral.item(0).checked) || (cb_Referral.item(1).checked) || (cb_L1_dataTrigger.checked && cb_L1_dataDeliverer.value != "")
 
     if (!cb_L1_dataTrigger.checked) {
